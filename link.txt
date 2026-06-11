@@ -1,0 +1,12 @@
+web_link: "https://alzubayer.com"
+
+linkedin_link: "https://www.linkedin.com/in/abir-al-zubayer/"
+git_hub_link: "https://github.com/abirall"
+dribbble_link:"https://dribbble.com/abir_all"
+
+contact_number: "+880 17567 59642"
+mail: "abiralzubayer0@gmail.com"
+
+medium_link: "https://medium.com/@abirall"   #all the portfolio project read more button will go with the link.
+
+youtube: "youtube.com/@abiralzubayer"

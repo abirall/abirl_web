@@ -1,0 +1,9 @@
+color
+pramiry_color: "F4A300B"
+text_color: "1A1A1A"
+
+other_color: "FFF3D6"
+
+
+Font
+Font_family: "INTER", 
