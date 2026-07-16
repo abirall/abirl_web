@@ -7,7 +7,10 @@
   <meta name="description"
     content="Abir Al Zubayer portfolio: DevOps, cloud infrastructure, Docker, Kubernetes, CI/CD, and product-focused frontend work." />
   <meta name="theme-color" content="#1a1a1a" />
-  <title>Abir Al Zubayer | DevOps Engineer</title>
+  <title>Abir Al Zubayer | DevOps Engineer &amp; Infrastructure Automation Expert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;550;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="logo/Header_logo.svg" type="image/svg+xml" />
   <link rel="preload" href="all_eliments/Hero_page_sectio/abir_profile_img1.png" as="image" />
   <link rel="stylesheet" href="styles.css" />
@@ -157,58 +160,12 @@
       </div>
     </section>
 
-    <section class="tabs" aria-label="Skill categories">
-      <div class="tabs__row shell">
-        <span class="is-active">Architectures</span>
-        <span>Microservice</span>
-        <span>Monolithic</span>
-        <span>Client-Server</span>
-        <span>System Design</span>
-        <span>Ci/Cd</span>
-      </div>
-    </section>
-
-    <section class="process section" id="experience" aria-labelledby="process-title">
+    <!-- Section 1: Work Process -->
+    <section class="work-process section" id="experience" aria-labelledby="work-process-title">
       <div class="shell">
         <p class="eyebrow reveal">Work Process</p>
-        <div class="process__head reveal">
-          <h2 class="section-title" id="process-title">FROM CONCEPT TO<br />DEPLOYMENT</h2>
-        </div>
-        <div class="process__grid">
-          <article class="process-card reveal">
-            <div class="process-card__icon-wrapper">
-              <img src="all_eliments/Assicivement_section/aws_icon.svg" alt="AWS logo" />
-            </div>
-            <h3>Requirement Gathering</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard.</p>
-          </article>
-          <article class="process-card reveal">
-            <div class="process-card__icon-wrapper">
-              <img src="all_eliments/Assicivement_section/azure_icon.svg" alt="Azure logo" />
-            </div>
-            <h3>Requirement Gathering</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard.</p>
-          </article>
-          <article class="process-card reveal">
-            <div class="process-card__icon-wrapper">
-              <img src="all_eliments/Assicivement_section/red_hat_icon.svg" alt="Red Hat logo" />
-            </div>
-            <h3>Requirement Gathering</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="featured section" id="projects" aria-labelledby="projects-title">
-      <div class="shell">
-        <div class="featured__head reveal">
-          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+        <div class="work-process__head reveal">
+          <h2 class="section-title" id="work-process-title">Work Process</h2>
           <a class="btn btn--dark btn--arrow" href="https://github.com/abirall" target="_blank" rel="noopener">
             View Projects
             <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -216,101 +173,206 @@
             </svg>
           </a>
         </div>
-        <div class="featured__stage reveal">
-          <!-- Left Card -->
-          <article class="project-card project-card--left">
-            <img src="all_eliments/work_process_section/reduce_deployment_time_img_1.png"
-              alt="AB Land Mark LTD project preview" loading="lazy" />
-            <div class="project-card__badge">AB Land Mark LTD.</div>
-            <a class="project-card__btn" href="https://github.com/abirall" target="_blank" rel="noopener"
-              aria-label="View AB Land Mark LTD project">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M7 17 17 7m0 0H9m8 0v8" />
-              </svg>
-            </a>
+        <div class="work-process__grid">
+          <article class="work-process-card reveal" data-tilt>
+            <div class="work-process-card__image">
+              <img src="all_eliments/work_process_section/reduce_deployment_time_img_1.png"
+                alt="Deployment Illustration" loading="lazy" />
+            </div>
+            <div class="work-process-card__content">
+              <h3>Reduced deployment time by 60%</h3>
+            </div>
           </article>
-
-          <!-- Center Card (Highlighted) -->
-          <article class="project-card project-card--center">
-            <div class="project-card__img-wrapper">
+          <article class="work-process-card reveal" data-tilt>
+            <div class="work-process-card__image">
               <img
                 src="all_eliments/work_process_section/from_concept_to_deployment_Automated CICD for production_img_2.png"
-                alt="Real Estate Website project preview" loading="lazy" />
-              <div class="project-card__play">
-                <svg viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
+                alt="CI/CD Illustration" loading="lazy" />
             </div>
-            <div class="project-card__banner">Real Estate Website</div>
+            <div class="work-process-card__content">
+              <h3>Automated CI/CD for production</h3>
+            </div>
           </article>
-
-          <!-- Right Card -->
-          <article class="project-card project-card--right">
-            <img src="all_eliments/work_process_section/from_concept_to_deployment_Deployed with 99.9 uptime_img_3.png"
-              alt="Uptime Dashboard project preview" loading="lazy" />
-            <a class="project-card__btn" href="https://github.com/abirall" target="_blank" rel="noopener"
-              aria-label="View Uptime Dashboard project">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M7 17 17 7m0 0H9m8 0v8" />
-              </svg>
-            </a>
+          <article class="work-process-card reveal" data-tilt>
+            <div class="work-process-card__image">
+              <img
+                src="all_eliments/work_process_section/from_concept_to_deployment_Deployed with 99.9 uptime_img_3.png"
+                alt="Uptime Illustration" loading="lazy" />
+            </div>
+            <div class="work-process-card__content">
+              <h3>Deployed with 99.9% uptime</h3>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="insights section" aria-labelledby="insights-title">
+    <!-- Section 2: Certifications & Achievements -->
+    <section class="certifications section" aria-labelledby="certifications-title">
       <div class="shell">
-        <p class="eyebrow reveal">Blogs</p>
-        <div class="insights__head reveal">
-          <h2 class="section-title" id="insights-title">INSIGHTS &amp;<br />INDUSTRY TRENDS</h2>
-          <a class="btn btn--dark btn--arrow" href="https://medium.com/@abirall" target="_blank" rel="noopener">
-            Read More
+        <p class="eyebrow reveal">Credentials</p>
+        <div class="certifications__head reveal">
+          <h2 class="section-title" id="certifications-title">Certifications & Achievements</h2>
+        </div>
+        <div class="certifications__grid">
+          <article class="certification-card reveal">
+            <div class="certification-card__logo">
+              <img src="all_eliments/Assicivement_section/aws_icon.svg" alt="AWS Logo" loading="lazy" />
+            </div>
+            <p class="certification-card__text">
+              AWS Certified Solutions Architect — Expert-level validation of designing and deploying scalable, highly
+              available, and fault-tolerant systems on Amazon Web Services.
+            </p>
+          </article>
+          <article class="certification-card reveal">
+            <div class="certification-card__logo">
+              <img src="all_eliments/Assicivement_section/azure_icon.svg" alt="Azure Logo" loading="lazy" />
+            </div>
+            <p class="certification-card__text">
+              Microsoft Certified: Azure DevOps Engineer — Proven expertise in combining people, processes, and
+              technologies to continuously deliver valuable cloud infrastructure solutions.
+            </p>
+          </article>
+          <article class="certification-card reveal">
+            <div class="certification-card__logo">
+              <img src="all_eliments/Assicivement_section/red_hat_icon.svg" alt="Red Hat Logo" loading="lazy" />
+            </div>
+            <p class="certification-card__text">
+              Red Hat Certified Specialist in Containers — Advanced proficiency in building, deploying, scaling, and
+              managing containerized applications using OpenShift and Kubernetes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Core Mastery -->
+    <section class="core-mastery section" aria-labelledby="core-mastery-title">
+      <div class="shell">
+        <div class="core-mastery__banner reveal">
+          <div class="core-mastery__left">
+            <h2 id="core-mastery-title" class="core-mastery__title">Kubernetes & Docker Mastery</h2>
+            <p class="core-mastery__text">
+              Delivering production-grade container orchestration and robust Infrastructure-as-Code at scale. My
+              approach ensures enterprise-grade resilience, zero-trust security, and seamless automated scalability.
+            </p>
+          </div>
+          <div class="core-mastery__right">
+            <div class="core-mastery__row">
+              <div class="core-mastery__icon">
+                <img src="all_eliments/Core_Mastery_Section/Hardened Security Posture_icon.svg" alt="Badge Icon" />
+              </div>
+              <span class="core-mastery__badge">Zero-Trust K8s Networking</span>
+            </div>
+            <div class="core-mastery__row">
+              <div class="core-mastery__icon">
+                <img src="all_eliments/Core_Mastery_Section/cluster_work_station.svg" alt="Badge Icon" />
+              </div>
+              <span class="core-mastery__badge">GitOps-Driven Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Featured Projects -->
+    <section class="featured-projects section" id="projects" aria-labelledby="featured-projects-title">
+      <div class="shell">
+        <p class="eyebrow reveal">Projects</p>
+        <div class="featured-projects__head reveal">
+          <h2 class="section-title" id="featured-projects-title">Featured Projects</h2>
+        </div>
+        <div class="featured-projects__grid">
+          <article class="featured-project-card reveal">
+            <div class="featured-project-card__visual">
+              <img src="all_eliments/Featured_Projects_section/img_1.png" alt="Cloud Cost Optimizer Preview"
+                loading="lazy" />
+            </div>
+            <div class="featured-project-card__content">
+              <span class="featured-project-card__tag">Latest • 2 MIN READ</span>
+              <h3 class="featured-project-card__title">Cloud Cost Optimizer</h3>
+              <span class="featured-project-card__date">October 24, 2023</span>
+              <p class="featured-project-card__desc">
+                Designed an AI-driven platform capable of scanning cloud infrastructure to identify idle resources and
+                optimize architectural costs.
+              </p>
+              <a href="https://medium.com/@abirall" class="featured-project-card__link" target="_blank"
+                rel="noopener">[Read More]</a>
+            </div>
+          </article>
+          <article class="featured-project-card reveal">
+            <div class="featured-project-card__visual">
+              <img src="all_eliments/Featured_Projects_section/img_2.png" alt="Internal Developer Platform Preview"
+                loading="lazy" />
+            </div>
+            <div class="featured-project-card__content">
+              <span class="featured-project-card__tag">Latest • 2 MIN READ</span>
+              <h3 class="featured-project-card__title">Internal Developer Platform</h3>
+              <span class="featured-project-card__date">October 24, 2023</span>
+              <p class="featured-project-card__desc">
+                Built a self-service platform designed to streamline infrastructure provisioning and accelerate
+                deployment cycles for developer teams.
+              </p>
+              <a href="https://medium.com/@abirall" class="featured-project-card__link" target="_blank"
+                rel="noopener">[Read More]</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Recent Work -->
+    <section class="recent-work section" aria-labelledby="recent-work-title">
+      <div class="shell">
+        <p class="eyebrow reveal">Portfolio</p>
+        <div class="recent-work__head reveal">
+          <h2 class="section-title" id="recent-work-title">Recent Work</h2>
+          <a class="btn btn--gold btn--arrow" href="#contact">
+            Let's Connect
             <svg aria-hidden="true" viewBox="0 0 24 24">
               <path d="M7 17 17 7m0 0H9m8 0v8" />
             </svg>
           </a>
         </div>
-        <div class="insights__grid">
-          <article class="insight-card reveal">
-            <img src="all_eliments/Portfolio_recent_work/img_1.png" alt="Optimizing CI/CD" loading="lazy" />
-            <div class="insight-card__content">
-              <h3>Optimizing CI/CD</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis velit, accumsan. Your Nothing
+        <div class="recent-work__grid">
+          <article class="recent-work-card reveal">
+            <div class="recent-work-card__visual">
+              <img src="all_eliments/Portfolio_recent_work/img_1.png" alt="Kubernetes Monitoring Preview"
+                loading="lazy" />
+            </div>
+            <div class="recent-work-card__content">
+              <span class="recent-work-card__date">December 24, 2023</span>
+              <h3>Kubernetes Monitoring</h3>
+              <p>
+                Designed a complete observability solution for Kubernetes clusters and cloud resources, integrating
+                end-to-end monitoring, logging, and alerting dashboards.
               </p>
-              <a class="btn btn--gold btn--small" href="https://medium.com/@abirall" target="_blank" rel="noopener">Read
-                more</a>
             </div>
           </article>
-          <article class="insight-card reveal">
-            <img src="all_eliments/Portfolio_recent_work/img_2.png" alt="Optimizing CI/CD" loading="lazy" />
-            <div class="insight-card__content">
-              <h3>Optimizing CI/CD</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis velit, accumsan. Your Nothing
+          <article class="recent-work-card reveal">
+            <div class="recent-work-card__visual">
+              <img src="all_eliments/Portfolio_recent_work/img_2.png" alt="GitOps Delivery Preview" loading="lazy" />
+            </div>
+            <div class="recent-work-card__content">
+              <span class="recent-work-card__date">December 24, 2023</span>
+              <h3>GitOps Delivery</h3>
+              <p>
+                Implemented declarative GitOps workflows to manage Kubernetes and version-controlled infrastructure
+                configurations, radically reducing deployment errors.
               </p>
-              <a class="btn btn--gold btn--small" href="https://medium.com/@abirall" target="_blank" rel="noopener">Read
-                more</a>
             </div>
           </article>
-          <article class="insight-card reveal">
-            <img src="all_eliments/Portfolio_recent_work/img_3.png" alt="Optimizing CI/CD" loading="lazy" />
-            <div class="insight-card__content">
-              <h3>Optimizing CI/CD</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis velit, accumsan. Your Nothing
-              </p>
-              <a class="btn btn--gold btn--small" href="https://medium.com/@abirall" target="_blank" rel="noopener">Read
-                more</a>
+          <article class="recent-work-card reveal">
+            <div class="recent-work-card__visual">
+              <img src="all_eliments/Portfolio_recent_work/img_3.png" alt="AWS EKS Platform Preview" loading="lazy" />
             </div>
-          </article>
-          <article class="insight-card reveal">
-            <img src="all_eliments/Featured_Projects_section/img_1.png" alt="Optimizing CI/CD" loading="lazy" />
-            <div class="insight-card__content">
-              <h3>Optimizing CI/CD</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis velit, accumsan. Your Nothing
+            <div class="recent-work-card__content">
+              <span class="recent-work-card__date">December 24, 2023</span>
+              <h3>AWS EKS Platform</h3>
+              <p>
+                Provisioned and managed AWS infrastructure using Terraform and Kubernetes best practices. Implemented
+                fully automated CI/CD deployment pipelines.
               </p>
-              <a class="btn btn--gold btn--small" href="https://medium.com/@abirall" target="_blank" rel="noopener">Read
-                more</a>
             </div>
           </article>
         </div>
