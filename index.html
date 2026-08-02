@@ -3,519 +3,1041 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Abir Al Zubayer — DevOps Engineer in Bangladesh | Kubernetes, Docker &amp; AWS</title>
   <meta name="description"
-    content="Abir Al Zubayer portfolio: DevOps, cloud infrastructure, Docker, Kubernetes, CI/CD, and product-focused frontend work." />
+    content="Abir Al Zubayer (Abir DevOps) is a DevOps and cloud engineer in Bangladesh building secure, scalable infrastructure with Kubernetes, Docker, AWS, Azure, Terraform, and automated CI/CD." />
+  <meta name="keywords"
+    content="Abir DevOps, Abir Al Zubayer, DevOps Engineer Bangladesh, DevOps Bangladesh, Cloud Engineer Bangladesh, Kubernetes, Docker, AWS, Azure, Terraform, Jenkins, GitHub Actions, Linux, DevSecOps, MLOps, Cloud Native, CI/CD" />
+  <meta name="author" content="Abir Al Zubayer" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#1a1a1a" />
-  <title>Abir Al Zubayer | DevOps Engineer &amp; Infrastructure Automation Expert</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;550;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo/Header_logo.svg" type="image/svg+xml" />
-  <link rel="preload" href="all_eliments/Hero_page_sectio/abir_profile_img1.png" as="image" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="Dhaka, Bangladesh" />
+  <link rel="canonical" href="https://alzubayer.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Abir Al Zubayer — Abir DevOps" />
+  <meta property="og:url" content="https://alzubayer.com/" />
+  <meta property="og:title" content="Abir Al Zubayer — DevOps Engineer in Bangladesh" />
+  <meta property="og:description"
+    content="DevOps and cloud engineer in Bangladesh building secure, scalable infrastructure with Kubernetes, Docker, AWS, Azure, Terraform, and automated CI/CD." />
+  <meta property="og:image" content="https://alzubayer.com/assets/img/og/og-cover.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"
+    content="Abir Al Zubayer, DevOps Engineer in Bangladesh, with Kubernetes, Docker, AWS, and Terraform tooling" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Abir Al" />
+  <meta property="profile:last_name" content="Zubayer" />
+  <meta property="profile:username" content="abirall" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abir Al Zubayer — DevOps Engineer in Bangladesh" />
+  <meta name="twitter:description"
+    content="DevOps and cloud engineer in Bangladesh building secure, scalable infrastructure with Kubernetes, Docker, AWS, Azure, Terraform, and automated CI/CD." />
+  <meta name="twitter:image" content="https://alzubayer.com/assets/img/og/og-cover.png" />
+  <meta name="twitter:image:alt"
+    content="Abir Al Zubayer, DevOps Engineer in Bangladesh, with Kubernetes, Docker, AWS, and Terraform tooling" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/logo/mark.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/logo/mark.svg" />
+
+  <!-- Fonts: preconnect then load Inter without blocking render -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  </noscript>
+
+  <link rel="preload" as="image" href="assets/img/hero/abir-profile.webp" type="image/webp" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://alzubayer.com/#abir",
+        "name": "Abir Al Zubayer",
+        "alternateName": ["Abir DevOps", "Abir"],
+        "url": "https://alzubayer.com/",
+        "mainEntityOfPage": { "@id": "https://alzubayer.com/#webpage" },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://alzubayer.com/assets/img/hero/abir-profile.png",
+          "width": 176,
+          "height": 176,
+          "caption": "Abir Al Zubayer, DevOps Engineer in Bangladesh"
+        },
+        "jobTitle": "DevOps Engineer",
+        "email": "mailto:abiralzubayer0@gmail.com",
+        "telephone": "+880-1756-759642",
+        "description": "DevOps and cloud engineer in Bangladesh who designs scalable cloud infrastructure, automates CI/CD pipelines, and runs containerised production systems on Kubernetes, Docker, AWS, and Azure.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BD",
+          "addressLocality": "Dhaka",
+          "addressRegion": "Dhaka"
+        },
+        "nationality": { "@type": "Country", "name": "Bangladesh" },
+        "workLocation": { "@type": "Place", "name": "Bangladesh" },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "DevOps Engineer",
+          "occupationalCategory": "15-1244.00 Network and Computer Systems Administrators",
+          "occupationLocation": { "@type": "Country", "name": "Bangladesh" },
+          "skills": "Kubernetes, Docker, AWS, Azure, Terraform, Jenkins, GitHub Actions, Linux, DevSecOps, MLOps, Cloud Native, CI/CD"
+        },
+        "knowsAbout": [
+          "DevOps", "Kubernetes", "Docker", "AWS", "Azure", "Terraform", "Jenkins",
+          "GitHub Actions", "Linux", "DevSecOps", "MLOps", "Cloud Native", "CI/CD",
+          "GitOps", "ArgoCD", "Helm", "Infrastructure as Code", "Platform Engineering",
+          "Site Reliability Engineering", "Cloud Architecture", "Prometheus", "Grafana",
+          "Ansible", "Microservices", "Amazon EKS", "Observability"
+        ],
+        "knowsLanguage": ["en", "bn"],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "AWS Certified Solutions Architect",
+            "credentialCategory": "certification",
+            "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Microsoft Azure Certification",
+            "credentialCategory": "certification",
+            "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Red Hat Certified System Administrator",
+            "credentialCategory": "certification",
+            "recognizedBy": { "@type": "Organization", "name": "Red Hat" }
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/abir-al-zubayer/",
+          "https://github.com/abirall",
+          "https://medium.com/@abirall",
+          "https://www.youtube.com/@AbirDevOps",
+          "https://dribbble.com/abir_all"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://alzubayer.com/#website",
+        "url": "https://alzubayer.com/",
+        "name": "Abir Al Zubayer — DevOps Engineer",
+        "alternateName": "Abir DevOps",
+        "description": "Portfolio of Abir Al Zubayer, a DevOps and cloud engineer in Bangladesh working with Kubernetes, Docker, AWS, Azure, Terraform, and CI/CD automation.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://alzubayer.com/#abir" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://alzubayer.com/#webpage",
+        "url": "https://alzubayer.com/",
+        "name": "Abir Al Zubayer — DevOps Engineer in Bangladesh | Kubernetes, Docker & AWS",
+        "isPartOf": { "@id": "https://alzubayer.com/#website" },
+        "about": { "@id": "https://alzubayer.com/#abir" },
+        "mainEntity": { "@id": "https://alzubayer.com/#abir" },
+        "inLanguage": "en",
+        "primaryImageOfPage": { "@id": "https://alzubayer.com/#abir" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://alzubayer.com/#recent-work",
+        "name": "Recent DevOps work by Abir Al Zubayer",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Kubernetes Monitoring",
+              "description": "A complete observability solution for Kubernetes clusters and cloud resources, integrating monitoring, logging, and alerting.",
+              "about": ["Kubernetes", "Prometheus", "Grafana", "Observability"],
+              "url": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG",
+              "author": { "@id": "https://alzubayer.com/#abir" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "GitOps Delivery",
+              "description": "GitOps delivery on Kubernetes with version-controlled configuration, reducing deployment errors through repeatable releases.",
+              "about": ["GitOps", "Kubernetes", "CI/CD", "ArgoCD"],
+              "url": "https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv",
+              "author": { "@id": "https://alzubayer.com/#abir" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "AWS EKS Platform",
+              "description": "AWS infrastructure provisioned and managed with Terraform and Kubernetes best practices, including automated CI/CD.",
+              "about": ["AWS", "Amazon EKS", "Terraform", "Kubernetes", "CI/CD"],
+              "url": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF",
+              "author": { "@id": "https://alzubayer.com/#abir" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="top">
-    <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Abir Al Zubayer home">
-        <img src="logo/Header_logo.svg" width="28" height="25" alt="" />
-        <span>Abir Al Zubayer</span>
-      </a>
-
-      <button class="nav__toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <div class="nav__links" data-menu>
-        <a href="#home" class="is-active">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-      </div>
-
-      <div class="nav__actions">
-        <a class="btn btn--resume" href="resume.pdf" target="_blank" rel="noopener">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" />
-          </svg>
-          Resume
+    <div class="shell">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top">
+          <img src="assets/logo/mark.svg" width="30" height="27" alt="" />
+          <span>Abir Al Zubayer</span>
         </a>
-        <a class="btn btn--gold" href="#contact">Contact</a>
-      </div>
-    </nav>
+
+        <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav__links" id="nav-menu">
+          <a href="#home" class="is-active">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+        </div>
+
+        <div class="nav__actions">
+          <a class="btn btn--resume" href="assets/docs/abir-al-zubayer-resume.pdf" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" />
+            </svg>
+            Resume
+          </a>
+          <a class="btn btn--gold" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
+    <!-- ================= Hero ================= -->
     <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero__content shell reveal">
-        <h1 id="hero-title">
-          Abir Al Zubayer
-          <img class="hero__profile" src="all_eliments/Hero_page_sectio/abir_profile_img1.png"
-            alt="Portrait of Abir Al Zubayer" />
+      <div class="shell">
+        <h1 class="hero__title reveal" id="hero-title">
+          <span>Abir Al Zubayer</span>
+          <picture>
+            <source srcset="assets/img/hero/abir-profile.webp" type="image/webp" />
+            <img class="hero__avatar" src="assets/img/hero/abir-profile.png" width="176" height="176"
+              alt="Abir Al Zubayer, DevOps Engineer in Bangladesh" fetchpriority="high" />
+          </picture>
         </h1>
-        <p class="hero__subtitle">
-          DevOps Engineer & <br />
-          <span>Design Specialist</span>
+
+        <h2 class="hero__subtitle reveal reveal-delay-1">
+          DevOps Engineer Specializing in
+          <span>Scalable Cloud Infrastructure</span>
+        </h2>
+
+        <p class="hero__text reveal reveal-delay-2">
+          Design and deploy secure, automated CI/CD pipelines and
+          production-ready systems using Docker, Kubernetes, and modern DevOps practices.
         </p>
-        <p class="hero__text">
-          DevOps Engineer building scalable, secure, and automated infrastructure
-        </p>
-        <div class="hero__actions">
-          <div class="hero__btn-group">
-            <a class="btn btn--dark" href="#projects">View Projects</a>
-            <a class="btn btn--play" href="https://youtube.com/@abiralzubayer" target="_blank" rel="noopener"
-              aria-label="Watch demo video">
+
+        <div class="hero__actions reveal reveal-delay-3">
+          <div class="hero__group">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="hero__play" href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener"
+              aria-label="Watch DevOps walkthroughs on YouTube">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
             </a>
           </div>
-          <a class="btn btn--light" href="#contact">Contact Me</a>
+          <a class="btn btn--ghost" href="#contact">Let's Connect</a>
         </div>
       </div>
     </section>
 
-    <section class="about-hero" id="about" aria-labelledby="vision-title">
-      <div class="about-hero__social shell reveal">
-        <p>Follow <strong>Abir</strong><br />online -</p>
-        <div aria-label="Social links">
-          <a href="https://github.com/abirall" target="_blank" rel="noopener">
-            <svg aria-hidden="true" viewBox="0 0 24 24"
-              style="width:16px; height:16px; fill:currentColor; margin-right:6px; display:inline-block; vertical-align:middle;">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-            </svg>
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener">
-            <svg aria-hidden="true" viewBox="0 0 24 24"
-              style="width:16px; height:16px; fill:currentColor; margin-right:6px; display:inline-block; vertical-align:middle;">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-            LinkedIn
-          </a>
-          <a href="https://dribbble.com/abir_all" target="_blank" rel="noopener">
-            <svg aria-hidden="true" viewBox="0 0 24 24"
-              style="width:16px; height:16px; fill:currentColor; margin-right:6px; display:inline-block; vertical-align:middle;">
-              <path
-                d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.777-1.564-1.71-3.486-1.92a20.07 20.07 0 0 0-3.336.1c.1.25.195.5.285.753.114.333.22.67.315 1.008a9.42 9.42 0 0 0 5.48-.973.82.82 0 0 0 .742.032zm-3.056 3.655c-.244-.572-.733-1.32-1.464-2.124a9.7 9.7 0 0 1-5.187.973.91.91 0 0 1 .526.963c.012.12.02.24.022.36.002.043.003.087.003.13 0 .044-.001.088-.003.13a10.022 10.022 0 0 0 6.103-.432zm-12.82-.416c.39-.773 1.782-2.158 4.398-3.02 1.4-.46 3.018-.68 4.79-.652a20.254 20.254 0 0 0-.323-1.077 20.27 20.27 0 0 0-.294-.78c-1.89-.09-3.95.1-6.136.57-2.61.56-4.63 1.58-5.83 2.91a9.92 9.92 0 0 0 3.387 2.05zm6.548 4.757c.365-.77.587-1.764.674-2.905-.332.008-.667.012-1.004.012-.66 0-1.332-.016-2.016-.048A9.878 9.878 0 0 0 12.79 22.04c-.004-.002-.008-.004-.012-.006zm-6.103-9.544a9.782 9.782 0 0 1 5.097-.977c-.105-.285-.223-.572-.35-.858-.238-.535-.506-1.056-.8-1.558a9.894 9.894 0 0 0-3.947 3.393zM12 2C6.486 2 2 6.486 2 12c0 2.213.725 4.253 1.947 5.914 1.155-1.572 3.385-2.888 6.547-3.606 2.072-.47 4.093-.66 6.003-.578.113.284.22.57.32.858.077.22.15.44.22.66-.466.02-.937.03-1.41.03a11.956 11.956 0 0 1-5.1-.384c-2.484.776-3.864 2.04-4.28 2.766a9.973 9.973 0 0 0 5.753 2.33c.006-.058.014-.116.022-.174.004-.033.008-.066.012-.1-.082-.82-.266-1.545-.536-2.19-.044-.1-.09-.2-.138-.3.048-.002.096-.003.144-.003.322 0 .644-.004.965-.012.062.885.034 1.765-.084 2.585a9.932 9.932 0 0 0 6.643-2.915c-.244-.455-.584-.966-1.005-1.5-.785-.992-1.782-2.073-2.945-3.08 1.92.154 3.754-.047 5.4-.59a9.972 9.972 0 0 0-.258-4.896c-1.89.66-3.998.887-6.22.684.254.437.49.882.705 1.332.113.238.217.48.312.723-1.636-.048-3.136.14-4.475.56-2.484.782-3.844 2.064-4.25 2.784C5.166 16.326 4.3 14.26 4.3 12c0-4.246 3.454-7.7 7.7-7.7s7.7 3.454 7.7 7.7c0 .416-.037.822-.102 1.22-.058-.023-.116-.045-.174-.066a9.387 9.387 0 0 0-5.024.9c-.1-.22-.21-.43-.32-.65z" />
-            </svg>
-            Dribbble
-          </a>
-        </div>
-      </div>
+    <!-- ================= Social row + Vision / Goal ================= -->
+    <section class="section" style="padding-top: 0" aria-labelledby="vision-heading">
+      <h2 class="visually-hidden" id="vision-heading">Vision and goals</h2>
 
-      <div class="about-hero__panel shell reveal">
-        <div class="about-hero__gallery" aria-hidden="true">
-          <img src="all_eliments/About_section/img_1.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_2.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_3.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_4.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_5.png" alt="" loading="lazy" />
-        </div>
-
-        <span class="about-hero__word" aria-hidden="true">ABIR AL</span>
-        <div class="about-hero__cards">
-          <article class="vision-card">
-            <div>
-              <h2 id="vision-title">
-                <svg viewBox="0 0 24 24"
-                  style="width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2.25; stroke-linecap:round; stroke-linejoin:round; display:inline-block; vertical-align:middle; margin-right:8px;">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-                Abir Vision
-              </h2>
-              <p>
-                I focus on creating intuitive digital experiences that solve real
-                problems. My vision is to design clean, user-centered interfaces
-                that are impactful, scalable, and easy to use.
-              </p>
-            </div>
-          </article>
-          <article class="vision-card">
-            <div>
-              <h2>
-                <svg viewBox="0 0 24 24"
-                  style="width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2.25; stroke-linecap:round; stroke-linejoin:round; display:inline-block; vertical-align:middle; margin-right:8px;">
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="12" r="6" />
-                  <circle cx="12" cy="12" r="2" />
-                </svg>
-                Abir Goal
-              </h2>
-              <p>
-                Continuously grow as a designer while building thoughtful,
-                user-centered digital products. He aims to create clean, scalable
-                interfaces that deliver real value and meaningful user experiences.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 1: Work Process -->
-    <section class="work-process section" id="experience" aria-labelledby="work-process-title">
       <div class="shell">
-        <p class="eyebrow reveal">Work Process</p>
-        <div class="work-process__head reveal">
-          <h2 class="section-title" id="work-process-title">Work Process</h2>
-          <a class="btn btn--dark btn--arrow" href="https://github.com/abirall" target="_blank" rel="noopener">
-            View Projects
-            <svg aria-hidden="true" viewBox="0 0 24 24">
-              <path d="M7 17 17 7m0 0H9m8 0v8" />
-            </svg>
-          </a>
-        </div>
-        <div class="work-process__grid">
-          <article class="work-process-card reveal" data-tilt>
-            <div class="work-process-card__image">
-              <img src="all_eliments/work_process_section/reduce_deployment_time_img_1.png"
-                alt="Deployment Illustration" loading="lazy" />
-            </div>
-            <div class="work-process-card__content">
-              <h3>Reduced deployment time by 60%</h3>
-            </div>
-          </article>
-          <article class="work-process-card reveal" data-tilt>
-            <div class="work-process-card__image">
-              <img
-                src="all_eliments/work_process_section/from_concept_to_deployment_Automated CICD for production_img_2.png"
-                alt="CI/CD Illustration" loading="lazy" />
-            </div>
-            <div class="work-process-card__content">
-              <h3>Automated CI/CD for production</h3>
-            </div>
-          </article>
-          <article class="work-process-card reveal" data-tilt>
-            <div class="work-process-card__image">
-              <img
-                src="all_eliments/work_process_section/from_concept_to_deployment_Deployed with 99.9 uptime_img_3.png"
-                alt="Uptime Illustration" loading="lazy" />
-            </div>
-            <div class="work-process-card__content">
-              <h3>Deployed with 99.9% uptime</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2: Certifications & Achievements -->
-    <section class="certifications section" aria-labelledby="certifications-title">
-      <div class="shell">
-        <p class="eyebrow reveal">Credentials</p>
-        <div class="certifications__head reveal">
-          <h2 class="section-title" id="certifications-title">Certifications & Achievements</h2>
-        </div>
-        <div class="certifications__grid">
-          <article class="certification-card reveal">
-            <div class="certification-card__logo">
-              <img src="all_eliments/Assicivement_section/aws_icon.svg" alt="AWS Logo" loading="lazy" />
-            </div>
-            <p class="certification-card__text">
-              AWS Certified Solutions Architect — Expert-level validation of designing and deploying scalable, highly
-              available, and fault-tolerant systems on Amazon Web Services.
-            </p>
-          </article>
-          <article class="certification-card reveal">
-            <div class="certification-card__logo">
-              <img src="all_eliments/Assicivement_section/azure_icon.svg" alt="Azure Logo" loading="lazy" />
-            </div>
-            <p class="certification-card__text">
-              Microsoft Certified: Azure DevOps Engineer — Proven expertise in combining people, processes, and
-              technologies to continuously deliver valuable cloud infrastructure solutions.
-            </p>
-          </article>
-          <article class="certification-card reveal">
-            <div class="certification-card__logo">
-              <img src="all_eliments/Assicivement_section/red_hat_icon.svg" alt="Red Hat Logo" loading="lazy" />
-            </div>
-            <p class="certification-card__text">
-              Red Hat Certified Specialist in Containers — Advanced proficiency in building, deploying, scaling, and
-              managing containerized applications using OpenShift and Kubernetes.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Core Mastery -->
-    <section class="core-mastery section" aria-labelledby="core-mastery-title">
-      <div class="shell">
-        <div class="core-mastery__banner reveal">
-          <div class="core-mastery__left">
-            <h2 id="core-mastery-title" class="core-mastery__title">Kubernetes & Docker Mastery</h2>
-            <p class="core-mastery__text">
-              Delivering production-grade container orchestration and robust Infrastructure-as-Code at scale. My
-              approach ensures enterprise-grade resilience, zero-trust security, and seamless automated scalability.
-            </p>
+        <div class="social-row reveal">
+          <p class="social-row__label">Follow <strong>Abir</strong><br />online -</p>
+          <div class="social-row__links">
+            <a class="social-chip" href="https://github.com/abirall" target="_blank" rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub
+            </a>
+            <a class="social-chip social-chip--tilt" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank"
+              rel="noopener">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              Linkedin
+            </a>
+            <a class="social-chip" href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener">
+              <svg class="social-chip__yt" aria-hidden="true" viewBox="0 0 37.375 26.651">
+                <path
+                  d="M18.6873 0C18.6875 3.56649e-05 18.6875 0.00541702 18.6875 0.812516C18.6875 1.62502 18.6875 1.62503 18.6874 1.62503H18.6563C18.6353 1.62505 18.604 1.62508 18.5631 1.62517C18.4812 1.62536 18.3604 1.62573 18.2055 1.62646C17.8958 1.62791 17.4498 1.63083 16.9058 1.63665C15.8174 1.64829 14.3383 1.67159 12.7733 1.7181C11.207 1.76466 9.56126 1.83429 8.13782 1.93819C6.69151 2.04377 5.54331 2.18057 4.93113 2.34476L4.93075 2.34486C3.67217 2.68176 2.68176 3.67216 2.34486 4.93075L2.34476 4.93113C1.99581 6.23213 1.81092 8.30458 1.71734 10.1103C1.67118 11.001 1.64811 11.8064 1.63655 12.3892C1.63078 12.6804 1.6279 12.9155 1.62646 13.0774C1.62574 13.1584 1.62535 13.2209 1.62517 13.263C1.62509 13.2841 1.62505 13.3 1.62503 13.3106V13.3408C1.62505 13.3513 1.62509 13.3672 1.62517 13.3883C1.62535 13.4303 1.62574 13.4929 1.62646 13.5739C1.6279 13.7358 1.63078 13.971 1.63655 14.2622C1.64811 14.845 1.67118 15.6503 1.71734 16.541C1.81092 18.3466 1.99581 20.419 2.34476 21.72L2.34486 21.7205C2.6765 22.9594 3.64137 23.9384 4.87191 24.29L4.9307 24.3063L4.93113 24.3064C5.54331 24.4706 6.69151 24.6074 8.13782 24.713C9.56126 24.8169 11.207 24.8865 12.7733 24.9331C14.3383 24.9796 15.8174 25.0029 16.9058 25.0145C17.4498 25.0203 17.8958 25.0232 18.2055 25.0247C18.3604 25.0254 18.4812 25.0258 18.5631 25.026C18.604 25.0261 18.6353 25.0261 18.6563 25.0261C18.6667 25.0261 18.6746 25.0261 18.6798 25.0261C18.6824 25.0261 18.6844 25.0262 18.6857 25.0262H18.6874C18.6875 25.0269 18.6875 25.0504 18.6875 25.8386C18.6875 26.6435 18.6875 26.6511 18.6873 26.6512H18.679C18.6734 26.6512 18.6653 26.6511 18.6545 26.6511C18.633 26.6511 18.6011 26.6511 18.5595 26.651C18.4763 26.6508 18.3542 26.6504 18.1979 26.6497C17.8853 26.6482 17.4361 26.6453 16.8884 26.6394C15.7934 26.6277 14.3034 26.6043 12.725 26.5574C11.148 26.5105 9.47614 26.44 8.01952 26.3337C6.58578 26.229 5.2914 26.0855 4.51014 25.8759V25.8759C2.6908 25.3888 1.2624 23.9604 0.775239 22.141L0.75672 22.0708C0.370839 20.5855 0.18638 18.397 0.0945483 16.6251C0.0472719 15.7129 0.0236568 14.8896 0.0118542 14.2944C0.00594952 13.9966 0.00300668 13.7555 0.00152344 13.5883C0.000781762 13.5047 0.00037797 13.4396 0.00019043 13.3951C9.67307e-05 13.3729 7.16039e-05 13.3558 4.76074e-05 13.3441C3.56126e-05 13.3383 3.16143e-06 13.3338 0 13.3307V13.3258C0 13.3257 1.59001e-05 13.3257 0.812516 13.3257C0.00625796 13.3257 4.7587e-05 13.3256 0 13.3255V13.3206C3.16304e-06 13.3175 3.56322e-05 13.313 4.76074e-05 13.3072C7.15904e-05 13.2956 9.67547e-05 13.2785 0.00019043 13.2562C0.000377977 13.2117 0.00078171 13.1466 0.00152344 13.063C0.00300674 12.8958 0.00594969 12.6547 0.0118542 12.3569C0.0236568 11.7617 0.0472719 10.9384 0.0945483 10.0262C0.187838 8.22611 0.376708 5.99605 0.775239 4.51018C1.2624 2.69083 2.6908 1.26246 4.51014 0.775287V0.775239C5.2914 0.565695 6.58578 0.422149 8.01952 0.317494C9.47614 0.211168 11.148 0.140664 12.725 0.0937866C14.3034 0.0468705 15.7934 0.0234742 16.8884 0.011759C17.4361 0.00589969 17.8853 0.00294236 18.1979 0.00147583C18.3542 0.000742668 18.4763 0.000374354 18.5595 0.00019043C18.6011 9.84693e-05 18.633 7.07602e-05 18.6545 4.76074e-05C18.6653 3.60879e-05 18.6734 2.8836e-06 18.679 0H18.6873ZM18.6961 0C18.7016 2.88062e-06 18.7098 3.60922e-05 18.7205 4.76074e-05C18.7421 7.07602e-05 18.7739 9.84693e-05 18.8155 0.00019043C18.8987 0.000374351 19.0209 0.000742564 19.1772 0.00147583C19.4897 0.00294237 19.939 0.00589984 20.4866 0.011759C21.5816 0.0234741 23.0716 0.0468704 24.65 0.0937866C26.227 0.140664 27.8989 0.211168 29.3554 0.317494C30.7892 0.422149 32.0835 0.565691 32.8647 0.775239L32.8647 0.775287C34.67 1.25866 36.0905 2.6687 36.5883 4.468L36.5999 4.51061L36.6 4.51095C36.9968 5.99633 37.1857 8.22596 37.2794 10.026C37.3268 10.9382 37.3507 11.7614 37.3628 12.3566C37.3688 12.6544 37.3718 12.8955 37.3734 13.0627C37.3742 13.1462 37.3746 13.2113 37.3748 13.2558C37.3749 13.2781 37.3749 13.2952 37.375 13.3068C37.375 13.3127 37.375 13.3171 37.375 13.3202V13.3251C37.375 13.3252 37.375 13.3252 36.5625 13.3257C37.375 13.3257 37.375 13.3257 37.375 13.3258V13.3307C37.375 13.3338 37.375 13.3383 37.375 13.3441C37.3749 13.3558 37.3749 13.3729 37.3748 13.3951C37.3746 13.4396 37.3743 13.5047 37.3735 13.5883C37.3721 13.7555 37.3691 13.9966 37.3632 14.2944C37.3514 14.8896 37.3277 15.7129 37.2805 16.6251C37.1872 18.4251 36.9983 20.6551 36.5998 22.141C36.1127 23.9605 34.6841 25.3888 32.8647 25.8759C32.0835 26.0854 30.7891 26.229 29.3554 26.3337C27.8988 26.44 26.227 26.5105 24.65 26.5574C23.0716 26.6043 21.5816 26.6277 20.4866 26.6394C19.939 26.6453 19.4897 26.6482 19.1772 26.6497C19.0209 26.6504 18.8987 26.6508 18.8155 26.651C18.7739 26.6511 18.7421 26.6511 18.7205 26.6511C18.7098 26.6511 18.7016 26.6512 18.6961 26.6512H18.6877C18.6876 26.651 18.6875 26.6386 18.6875 25.8386C18.6875 25.0508 18.6875 25.0269 18.6876 25.0262H18.6893C18.6906 25.0262 18.6926 25.0261 18.6952 25.0261C18.7004 25.0261 18.7083 25.0261 18.7188 25.0261C18.7397 25.0261 18.771 25.0261 18.812 25.026C18.8939 25.0258 19.0147 25.0254 19.1696 25.0247C19.4793 25.0232 19.9252 25.0203 20.4692 25.0145C21.5576 25.0029 23.0367 24.9796 24.6017 24.9331C26.168 24.8865 27.8137 24.8169 29.2371 24.713C30.6834 24.6074 31.8316 24.4706 32.4437 24.3064L32.4442 24.3063C33.7028 23.9694 34.6933 22.979 35.0302 21.7205L35.0303 21.72C35.3792 20.419 35.5641 18.3466 35.6577 16.541C35.7038 15.6503 35.727 14.845 35.7385 14.2622C35.7443 13.971 35.7472 13.7358 35.7486 13.5739C35.7493 13.4929 35.7497 13.4303 35.7498 13.3883C35.7499 13.3672 35.75 13.3513 35.75 13.3408C35.75 13.3355 35.75 13.3316 35.75 13.3291V13.3227C35.75 13.3201 35.75 13.3162 35.75 13.3109C35.75 13.3004 35.7499 13.2845 35.7498 13.2635C35.7496 13.2214 35.7492 13.1588 35.7485 13.0778C35.747 12.9159 35.744 12.6807 35.7381 12.3895C35.7263 11.8066 35.7029 11.0012 35.6566 10.1104C35.5626 8.30473 35.3778 6.23185 35.0301 4.93037V4.93032C34.6931 3.67199 33.7027 2.68174 32.4441 2.34486L32.4437 2.34476C31.8316 2.18057 30.6834 2.04377 29.2371 1.93819C27.8137 1.83429 26.168 1.76466 24.6017 1.7181C23.0367 1.67159 21.5576 1.64829 20.4692 1.63665C19.9252 1.63083 19.4793 1.62791 19.1696 1.62646C19.0147 1.62573 18.8939 1.62536 18.812 1.62517C18.771 1.62508 18.7397 1.62505 18.7188 1.62503H18.6876C18.6875 1.625 18.6875 1.61982 18.6875 0.812516C18.6875 0.00943817 18.6876 0.000107999 18.6877 0H18.6961ZM14.7028 7.26051C14.9542 7.11537 15.2639 7.11538 15.5153 7.26051L24.803 12.6225C25.0544 12.7676 25.2093 13.0359 25.2093 13.3262C25.2093 13.6164 25.0544 13.8847 24.803 14.0298L15.5153 19.3916C15.2639 19.5368 14.9542 19.5368 14.7028 19.3916C14.4514 19.2465 14.2966 18.9783 14.2966 18.688V7.96415C14.2966 7.67388 14.4514 7.40565 14.7028 7.26051ZM15.9216 17.2807L22.7717 13.3261L15.9216 9.37138V17.2807ZM37.375 13.3257H36.5625L37.375 13.3253V13.3257Z" />
+              </svg>
+              YouTube
+            </a>
           </div>
-          <div class="core-mastery__right">
-            <div class="core-mastery__row">
-              <div class="core-mastery__icon">
-                <img src="all_eliments/Core_Mastery_Section/Hardened Security Posture_icon.svg" alt="Badge Icon" />
+        </div>
+      </div>
+
+      <!-- Reference puts the slate panel near full-bleed: x=18, w=1406, rx=20 -->
+      <div class="shell shell--wide">
+        <div class="panel reveal">
+          <span class="panel__word" aria-hidden="true">ABIR AL</span>
+          <div class="vision-grid">
+            <article class="vision-card">
+              <div class="vision-card__head">
+                <h3>Abir Vision</h3>
+                <img src="assets/icons/vision.svg" width="26" height="26" alt="" loading="lazy" />
               </div>
-              <span class="core-mastery__badge">Zero-Trust K8s Networking</span>
-            </div>
-            <div class="core-mastery__row">
-              <div class="core-mastery__icon">
-                <img src="all_eliments/Core_Mastery_Section/cluster_work_station.svg" alt="Badge Icon" />
+              <p>
+                I focus on creating intuitive digital experiences that solve real problems.
+                My vision is to design clean, user-centered interfaces that are impactful,
+                scalable, and easy to use.
+              </p>
+            </article>
+            <article class="vision-card">
+              <div class="vision-card__head">
+                <h3>Abir Goal</h3>
+                <img src="assets/icons/goal.svg" width="26" height="26" alt="" loading="lazy" />
               </div>
-              <span class="core-mastery__badge">GitOps-Driven Delivery</span>
-            </div>
+              <p>
+                Continuously grow as a designer while building thoughtful, user-centered
+                digital products. He aims to create clean, scalable interfaces that deliver
+                real value and meaningful user experiences.
+              </p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Featured Projects -->
-    <section class="featured-projects section" id="projects" aria-labelledby="featured-projects-title">
+    <!-- ================= Architecture ticker ================= -->
+    <section class="ticker" aria-label="Architecture specialisms">
+      <div class="ticker__track" data-ticker>
+        <span class="ticker__item ticker__item--lead">Architectures</span>
+        <span class="ticker__item">Microservice</span>
+        <span class="ticker__item">Monolithic</span>
+        <span class="ticker__item">Client-Server</span>
+        <span class="ticker__item">System Design</span>
+        <span class="ticker__item">Ci/Cd</span>
+        <span class="ticker__item">Cloud Native</span>
+        <span class="ticker__item">Platform Engineering</span>
+        <span class="ticker__item">Linux</span>
+        <span class="ticker__item">Networking</span>
+        <span class="ticker__item">Docker</span>
+        <span class="ticker__item">Kubernetes</span>
+        <span class="ticker__item">Helm</span>
+        <span class="ticker__item">GitOps</span>
+        <span class="ticker__item">ArgoCD</span>
+        <span class="ticker__item">CI/CD</span>
+        <span class="ticker__item">GitHub Actions</span>
+        <span class="ticker__item">Jenkins</span>
+        <span class="ticker__item">Terraform</span>
+        <span class="ticker__item">Ansible</span>
+        <span class="ticker__item">AWS</span>
+        <span class="ticker__item">Azure</span>
+        <span class="ticker__item">EKS</span>
+        <span class="ticker__item">K3s</span>
+        <span class="ticker__item">Cilium</span>
+        <span class="ticker__item">Traefik</span>
+        <span class="ticker__item">NGINX</span>
+        <span class="ticker__item">Monitoring</span>
+        <span class="ticker__item">Prometheus</span>
+        <span class="ticker__item">Grafana</span>
+        <span class="ticker__item">Loki</span>
+      </div>
+    </section>
+
+    <!-- ================= Work process ================= -->
+    <section class="section" id="experience" aria-labelledby="process-title">
       <div class="shell">
-        <p class="eyebrow reveal">Projects</p>
-        <div class="featured-projects__head reveal">
-          <h2 class="section-title" id="featured-projects-title">Featured Projects</h2>
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Work Process</p>
+            <h2 class="section-title section-title--upper" id="process-title">
+              From concept to<br />deployment
+            </h2>
+          </div>
+          <div class="btn-pair reveal">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn-tile" href="#projects" aria-label="Jump to featured projects">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7m0 0H9m8 0v8" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="featured-projects__grid">
-          <article class="featured-project-card reveal">
-            <div class="featured-project-card__visual">
-              <img src="all_eliments/Featured_Projects_section/img_1.png" alt="Cloud Cost Optimizer Preview"
-                loading="lazy" />
-            </div>
-            <div class="featured-project-card__content">
-              <span class="featured-project-card__tag">Latest • 2 MIN READ</span>
-              <h3 class="featured-project-card__title">Cloud Cost Optimizer</h3>
-              <span class="featured-project-card__date">October 24, 2023</span>
-              <p class="featured-project-card__desc">
-                Designed an AI-driven platform capable of scanning cloud infrastructure to identify idle resources and
-                optimize architectural costs.
-              </p>
-              <a href="https://medium.com/@abirall" class="featured-project-card__link" target="_blank"
-                rel="noopener">[Read More]</a>
-            </div>
+
+        <div class="process__grid">
+          <article class="process-card reveal">
+            <picture>
+              <source srcset="assets/img/process/process-1.webp" type="image/webp" />
+              <img src="assets/img/process/process-1.png" width="738" height="628"
+                alt="Case study: reduced deployment time by 60% for AB Landmark Limited" loading="lazy"
+                decoding="async" />
+            </picture>
+            <a class="process-card__arrow" href="#projects" aria-label="View the AB Landmark deployment case study">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7m0 0H9m8 0v8" />
+              </svg>
+            </a>
           </article>
-          <article class="featured-project-card reveal">
-            <div class="featured-project-card__visual">
-              <img src="all_eliments/Featured_Projects_section/img_2.png" alt="Internal Developer Platform Preview"
-                loading="lazy" />
-            </div>
-            <div class="featured-project-card__content">
-              <span class="featured-project-card__tag">Latest • 2 MIN READ</span>
-              <h3 class="featured-project-card__title">Internal Developer Platform</h3>
-              <span class="featured-project-card__date">October 24, 2023</span>
-              <p class="featured-project-card__desc">
-                Built a self-service platform designed to streamline infrastructure provisioning and accelerate
-                deployment cycles for developer teams.
-              </p>
-              <a href="https://medium.com/@abirall" class="featured-project-card__link" target="_blank"
-                rel="noopener">[Read More]</a>
-            </div>
+
+          <article class="process-card process-card--tall reveal reveal-delay-1">
+            <picture>
+              <source srcset="assets/img/process/process-2.webp" type="image/webp" />
+              <img src="assets/img/process/process-2.png" width="691" height="726"
+                alt="Diagram of an automated CI and CD pipeline from commit through production" loading="lazy"
+                decoding="async" />
+            </picture>
+            <p class="process-card__caption">Automated CI/CD for production</p>
+          </article>
+
+          <article class="process-card process-card--tallest reveal reveal-delay-2">
+            <picture>
+              <source srcset="assets/img/process/process-3.webp" type="image/webp" />
+              <img src="assets/img/process/process-3.png" width="749" height="637"
+                alt="Healthcare dashboard product deployed with 99.9% uptime" loading="lazy" decoding="async" />
+            </picture>
+            <p class="process-card__caption">Deployed with 99.9% uptime</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Recent Work -->
-    <section class="recent-work section" aria-labelledby="recent-work-title">
+    <!-- ================= Certifications ================= -->
+    <section class="certs section" aria-labelledby="certs-title">
       <div class="shell">
-        <p class="eyebrow reveal">Portfolio</p>
-        <div class="recent-work__head reveal">
-          <h2 class="section-title" id="recent-work-title">Recent Work</h2>
-          <a class="btn btn--gold btn--arrow" href="#contact">
-            Let's Connect
-            <svg aria-hidden="true" viewBox="0 0 24 24">
-              <path d="M7 17 17 7m0 0H9m8 0v8" />
-            </svg>
-          </a>
+        <div class="certs__head">
+          <div class="reveal">
+            <p class="eyebrow">Assicivement</p>
+            <h2 class="section-title" id="certs-title">Certification &amp;<br />Awards</h2>
+          </div>
+          <div class="certs__rule" aria-hidden="true"></div>
         </div>
-        <div class="recent-work__grid">
-          <article class="recent-work-card reveal">
-            <div class="recent-work-card__visual">
-              <img src="all_eliments/Portfolio_recent_work/img_1.png" alt="Kubernetes Monitoring Preview"
-                loading="lazy" />
+
+        <div class="certs__grid">
+          <article class="cert-card reveal">
+            <div class="cert-card__logo">
+              <img src="assets/icons/aws.svg" width="48" height="48" alt="Amazon Web Services" loading="lazy" />
             </div>
-            <div class="recent-work-card__content">
-              <span class="recent-work-card__date">December 24, 2023</span>
+            <h3>AWS</h3>
+            <!-- CHANGED: Added inline style to center-align details text -->
+            <p style="text-align: center;">
+              Earned this validation by passing the AWS exam focused on designing resilient, multi-tier cloud
+              architectures. Through this, I mastered deploying highly available systems using EC2, S3, and VPC, while
+              gaining deep expertise in secure access controls and cost-optimization strategies.
+            </p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <div class="cert-card__logo">
+              <img src="assets/icons/azure.svg" width="48" height="48" alt="Microsoft Azure" loading="lazy" />
+            </div>
+            <h3>Azure</h3>
+            <!-- CHANGED: Added inline style to center-align details text -->
+            <p style="text-align: center;">
+              Secured this credential by demonstrating proficiency in cloud governance, virtual networking, and
+              automated resource management. This equipped me with the practical skills to manage Azure Active
+              Directory, configure secure networks, and streamline software delivery using Azure DevOps pipelines.
+            </p>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <div class="cert-card__logo">
+              <img src="assets/icons/redhat.svg" width="48" height="48" alt="Red Hat" loading="lazy" />
+            </div>
+            <h3>Red Hat</h3>
+            <!-- CHANGED: Added inline style to center-align details text -->
+            <p style="text-align: center;">
+              Achieved this certification by passing a demanding, performance-based live laboratory exam on Red Hat
+              Enterprise Linux. This hands-on validation sharpened my skills in advanced system administration, shell
+              scripting, automated storage provisioning, and infrastructure security hardening.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Core mastery + featured projects ================= -->
+    <section class="shell shell--wide" id="projects" aria-labelledby="mastery-title">
+      <div class="mastery reveal">
+        <p class="mastery__eyebrow">Core Mastery</p>
+
+        <div class="mastery__grid">
+          <div>
+            <h2 id="mastery-title">
+              Kubernetes &amp;<br /><span class="text-gold">Docker</span> Mastery
+            </h2>
+            <p class="mastery__lead">
+              Delivering <strong>Production-Grade Container Orchestration</strong> and robust
+              <strong>Infrastructure-as-Code at Scale</strong>. My approach ensures resilience,
+              security, and automated scalability.
+            </p>
+            <div class="mastery__tags">
+              <span class="mastery-tag">
+                <img src="assets/icons/cluster.svg" width="20" height="20" alt="" loading="lazy" />
+                Multi-Cluster Orchestration
+              </span>
+              <span class="mastery-tag">
+                <img src="assets/icons/shield.svg" width="20" height="20" alt="" loading="lazy" />
+                Hardened Security Posture
+              </span>
+            </div>
+          </div>
+
+          <div class="mastery__cards">
+            <article class="mastery-card">
+              <div class="mastery-card__head">
+                <h3>Zero-Trust K8s Networking</h3>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="14" width="20" height="7" rx="2" />
+                  <path d="M6 17.5h.01M10 17.5h.01M12 10a4 4 0 0 1 4-4M12 6a8 8 0 0 1 8-8" />
+                </svg>
+              </div>
+              <p>
+                Implementing Istio service mesh and Calico network policies to ensure granular
+                security and mutual TLS across all microservices.
+              </p>
+              <div class="meter" role="img" aria-label="Zero-trust networking maturity: 94 percent">
+                <span class="meter__fill" style="--meter-value: 95%; --meter-color: #fdf3dc"></span>
+              </div>
+            </article>
+
+            <article class="mastery-card">
+              <div class="mastery-card__head">
+                <h3>GitOps-Driven Delivery</h3>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#f4a300" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="2.5" />
+                  <circle cx="6" cy="18" r="2.5" />
+                  <path d="M6 8.5v7M18 8v3a4 4 0 0 1-4 4h-3" />
+                  <path d="m14 12 4-4 4 4" />
+                </svg>
+              </div>
+              <p>
+                Leveraging ArgoCD and Helm to treat cluster state as code, ensuring 100%
+                environment parity and rapid disaster recovery.
+              </p>
+              <div class="meter" role="img" aria-label="GitOps delivery maturity: 88 percent">
+                <span class="meter__fill" style="--meter-value: 92%; --meter-color: #f4a300"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Featured projects live inside the same slate panel -->
+        <div class="featured">
+          <h2 class="featured__title">Featured Projects</h2>
+
+          <div class="featured__grid">
+            <article class="article-card reveal" style="--card-tint: var(--tint-cream); --card-accent: #d98f00">
+              <picture>
+                <source srcset="assets/img/projects/featured-1.webp" type="image/webp" />
+                <img src="assets/img/projects/featured-1.png" width="1400" height="1400"
+                  alt="Cloud cost optimizer dashboard illustration" loading="lazy" decoding="async" />
+              </picture>
+              <div class="article-card__body">
+                <p class="article-card__kicker">Letest — 2 MIN READ</p>
+                <h3>Cloud Cost Optimizer</h3>
+                <p class="article-card__date">October 24, 2023</p>
+                <p class="article-card__excerpt">
+                  Planned an AI-driven platform that surfaces idle spend across multi-account
+                  cloud estates and recommends rightsizing automatically.
+                </p>
+                <a class="article-card__link" href="https://medium.com/@abirall" target="_blank" rel="noopener">
+                  Read more<span class="visually-hidden"> about Cloud Cost Optimizer</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card reveal reveal-delay-1"
+              style="--card-tint: var(--tint-lilac); --card-accent: #7c3aed">
+              <picture>
+                <source srcset="assets/img/projects/featured-2.webp" type="image/webp" />
+                <img src="assets/img/projects/featured-2.png" width="1400" height="1400"
+                  alt="Internal developer platform illustration" loading="lazy" decoding="async" />
+              </picture>
+              <div class="article-card__body">
+                <p class="article-card__kicker">Letest — 2 MIN READ</p>
+                <h3>Developer Platform</h3>
+                <p class="article-card__date">October 24, 2023</p>
+                <p class="article-card__excerpt">
+                  Planned a self-service platform giving product teams golden paths for
+                  provisioning, deployment, and observability without ticket queues.
+                </p>
+                <a class="article-card__link" href="https://medium.com/@abirall" target="_blank" rel="noopener">
+                  Read more<span class="visually-hidden"> about Developer Platform</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Recent work ================= -->
+    <section class="section" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Portfolio</p>
+            <h2 class="section-title" id="work-title">Recent Work</h2>
+          </div>
+          <div class="btn-pair reveal">
+            <a class="btn" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener">
+              Let's Connect
+            </a>
+            <a class="btn-tile" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener"
+              aria-label="Connect with Abir on LinkedIn">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7m0 0H9m8 0v8" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="work__grid">
+          <article class="work-card reveal">
+            <picture>
+              <source srcset="assets/img/work/work-1.webp" type="image/webp" />
+              <img src="assets/img/work/work-1.png" width="1000" height="563"
+                alt="Kubernetes monitoring stack illustration" loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
               <h3>Kubernetes Monitoring</h3>
+              <p class="work-card__date">Date: 12.24.2023</p>
               <p>
-                Designed a complete observability solution for Kubernetes clusters and cloud resources, integrating
-                end-to-end monitoring, logging, and alerting dashboards.
+                Designed a complete observability solution for Kubernetes clusters and cloud
+                resources. Integrated monitoring, logging, and alerting.
               </p>
+              <a class="work-card__link"
+                href="https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG"
+                target="_blank" rel="noopener">
+                View project<span class="visually-hidden"> — Kubernetes Monitoring</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
             </div>
           </article>
-          <article class="recent-work-card reveal">
-            <div class="recent-work-card__visual">
-              <img src="all_eliments/Portfolio_recent_work/img_2.png" alt="GitOps Delivery Preview" loading="lazy" />
-            </div>
-            <div class="recent-work-card__content">
-              <span class="recent-work-card__date">December 24, 2023</span>
+
+          <article class="work-card reveal reveal-delay-1">
+            <picture>
+              <source srcset="assets/img/work/work-2.webp" type="image/webp" />
+              <img src="assets/img/work/work-2.png" width="1000" height="563"
+                alt="GitOps continuous delivery illustration" loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
               <h3>GitOps Delivery</h3>
+              <p class="work-card__date">Date: 12.24.2023</p>
               <p>
-                Implemented declarative GitOps workflows to manage Kubernetes and version-controlled infrastructure
-                configurations, radically reducing deployment errors.
+                Kubernetes and version-controlled configurations. Reduced deployment errors
+                through consistent and repeatable delivery.
               </p>
+              <a class="work-card__link"
+                href="https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv"
+                target="_blank" rel="noopener">
+                View project<span class="visually-hidden"> — GitOps Delivery</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
             </div>
           </article>
-          <article class="recent-work-card reveal">
-            <div class="recent-work-card__visual">
-              <img src="all_eliments/Portfolio_recent_work/img_3.png" alt="AWS EKS Platform Preview" loading="lazy" />
-            </div>
-            <div class="recent-work-card__content">
-              <span class="recent-work-card__date">December 24, 2023</span>
+
+          <article class="work-card reveal reveal-delay-2">
+            <picture>
+              <source srcset="assets/img/work/work-3.webp" type="image/webp" />
+              <img src="assets/img/work/work-3.png" width="1000" height="563" alt="AWS EKS platform illustration"
+                loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
               <h3>AWS EKS Platform</h3>
+              <p class="work-card__date">Date: 12.24.2023</p>
               <p>
-                Provisioned and managed AWS infrastructure using Terraform and Kubernetes best practices. Implemented
-                fully automated CI/CD deployment pipelines.
+                Provisioned and managed AWS infrastructure using Terraform and Kubernetes best
+                practices. Implemented automated CI/CD.
               </p>
+              <a class="work-card__link"
+                href="https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF"
+                target="_blank" rel="noopener">
+                View project<span class="visually-hidden"> — AWS EKS Platform</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="testimonials" aria-labelledby="testimonials-title">
-      <div class="testimonials__panel shell reveal">
-        <p class="eyebrow">Testimonials</p>
-        <h2 id="testimonials-title">WHAT CLIENT &amp;<br />COLLEAGUES SAY</h2>
-        <div class="testimonials__strip" aria-label="Client testimonials">
-          <img src="all_eliments/Testimonials_section/img_1.png" alt="Client testimonial card" loading="lazy" />
-          <img src="all_eliments/Testimonials_section/img_2.png" alt="Client testimonial card" loading="lazy" />
-          <img src="all_eliments/Testimonials_section/img_3_middile.png" alt="Client testimonial card" loading="lazy" />
-          <img src="all_eliments/Testimonials_section/img_4.png" alt="Client testimonial card" loading="lazy" />
-          <img src="all_eliments/Testimonials_section/img_5.png" alt="Client testimonial card" loading="lazy" />
+    <!-- ================= Testimonials ================= -->
+    <section class="shell" aria-labelledby="testimonials-title">
+      <div class="testimonials reveal">
+        <div class="testimonials__head">
+          <div>
+            <p class="eyebrow">Testimonials</p>
+            <h2 id="testimonials-title">What client &amp;<br />colleagues say</h2>
+          </div>
+
+          <div class="testimonials__score">
+            <p class="testimonials__score-value">5.0</p>
+            <div>
+              <span class="stars stars--lg" role="img" aria-label="Average rating: 5 out of 5"></span>
+              <p class="testimonials__score-note">Based on 5 client reviews</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials__grid">
+          <figure class="tcard tcard--featured">
+            <span class="tcard__mark" aria-hidden="true">&ldquo;</span>
+            <div class="tcard__top">
+              <span class="stars" role="img" aria-label="Rated 5 out of 5"></span>
+              <span class="tcard__tag">Repeat client</span>
+            </div>
+            <blockquote class="tcard__quote">
+              <p>
+                I have used Abir's services for a few projects, and highly recommend him for
+                design work. Highly focused with attention to details and delivering exceptional
+                quality work. Thank you very much Abir!
+              </p>
+            </blockquote>
+            <figcaption class="tcard__foot">
+              <span class="tcard__avatar" aria-hidden="true">t</span>
+              <span class="tcard__id">
+                <span class="tcard__name">travelbabe</span>
+                <span class="tcard__meta">Singapore &middot; Delivered in 2 weeks</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="tcard">
+            <div class="tcard__top">
+              <span class="stars" role="img" aria-label="Rated 5 out of 5"></span>
+            </div>
+            <blockquote class="tcard__quote">
+              <p>
+                Abir went above and beyond in delivering a very complete design. He delivered
+                exceptional and perfect work in a fast turn around time. I look forward to
+                working with him again.
+              </p>
+            </blockquote>
+            <figcaption class="tcard__foot">
+              <span class="tcard__avatar" aria-hidden="true">b</span>
+              <span class="tcard__id">
+                <span class="tcard__name">beatricerodin</span>
+                <span class="tcard__meta">United States &middot; Delivered in 9 days</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="tcard">
+            <div class="tcard__top">
+              <span class="stars" role="img" aria-label="Rated 5 out of 5"></span>
+              <span class="tcard__tag">Repeat client</span>
+            </div>
+            <blockquote class="tcard__quote">
+              <p>
+                It was great working with Abir and everything we wanted was achieved. We will
+                definitely be back for more services and would recommend Abir to any of our
+                business associates.
+              </p>
+            </blockquote>
+            <figcaption class="tcard__foot">
+              <span class="tcard__avatar" aria-hidden="true">l</span>
+              <span class="tcard__id">
+                <span class="tcard__name">lakehouse105</span>
+                <span class="tcard__meta">United States &middot; Delivered in 3 days</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="tcard">
+            <div class="tcard__top">
+              <span class="stars" role="img" aria-label="Rated 5 out of 5"></span>
+            </div>
+            <blockquote class="tcard__quote">
+              <p>
+                I really enjoyed working with Abir. Very responsive, creative and generous with
+                his time. I will be coming back again for future design needs.
+              </p>
+            </blockquote>
+            <figcaption class="tcard__foot">
+              <span class="tcard__avatar" aria-hidden="true">p</span>
+              <span class="tcard__id">
+                <span class="tcard__name">patrickwilso935</span>
+                <span class="tcard__meta">United States &middot; Delivered in 4 days</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="tcard">
+            <div class="tcard__top">
+              <span class="stars" role="img" aria-label="Rated 5 out of 5"></span>
+            </div>
+            <blockquote class="tcard__quote">
+              <p>
+                Project was done extremely fast and exactly what I was looking to have done.
+                Will definitely use Abir for future projects!
+              </p>
+            </blockquote>
+            <figcaption class="tcard__foot">
+              <span class="tcard__avatar" aria-hidden="true">j</span>
+              <span class="tcard__id">
+                <span class="tcard__name">jeffrobinson848</span>
+                <span class="tcard__meta">United States &middot; Delivered in 1 day</span>
+              </span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="knowledge section" id="skills" aria-labelledby="knowledge-title">
+    <!-- ================= Deep knowledge ================= -->
+    <section class="section" aria-labelledby="knowledge-title">
       <div class="shell">
-        <p class="eyebrow reveal">Deep Knowledge</p>
-        <div class="knowledge__head reveal">
-          <h2 class="section-title" id="knowledge-title">Learn with Abir Practical Skills<br />&amp; Real-World
-            Knowledge</h2>
-          <a class="btn btn--dark btn--arrow" href="https://medium.com/@abirall" target="_blank" rel="noopener">
-            Read More
-            <svg aria-hidden="true" viewBox="0 0 24 24">
-              <path d="M7 17 17 7m0 0H9m8 0v8" />
-            </svg>
-          </a>
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Deep Knowledge</p>
+            <h2 class="section-title" id="knowledge-title">
+              Learn with Abir Practical Skills<br />&amp; Real-World Knowledge
+            </h2>
+          </div>
+          <div class="btn-pair reveal">
+            <a class="btn" href="https://medium.com/@abirall" target="_blank" rel="noopener">Read More</a>
+            <a class="btn-tile" href="https://medium.com/@abirall" target="_blank" rel="noopener"
+              aria-label="Read all articles on Medium">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7m0 0H9m8 0v8" />
+              </svg>
+            </a>
+          </div>
         </div>
+
         <div class="knowledge__grid">
           <article class="knowledge-card reveal">
-            <img src="all_eliments/deep_knowladge/img_1.png" alt="CI/CD Secrets article preview" loading="lazy" />
-            <div class="knowledge-card__content">
-              <h3>CI/CD Secrets Nobody Tells You 🤫</h3>
-              <p>Vm | Docker | Php | Laravel</p>
-            </div>
+            <a class="knowledge-card__media" href="https://medium.com/@abirall" target="_blank" rel="noopener"
+              tabindex="-1" aria-hidden="true">
+              <picture>
+                <source srcset="assets/img/knowledge/knowledge-1.webp" type="image/webp" />
+                <img src="assets/img/knowledge/knowledge-1.png" width="612" height="459"
+                  alt="Article cover: CI/CD Secrets Nobody Tells You" loading="lazy" decoding="async" />
+              </picture>
+              <span class="knowledge-card__badge">
+                <img src="assets/icons/medium.svg" width="30" height="30" alt="" loading="lazy" />
+              </span>
+            </a>
+            <h3>
+              <a href="https://medium.com/@abirall" target="_blank" rel="noopener">
+                Building Production-Ready CI/CD Pipelines with Jenkins
+              </a>
+            </h3>
+            <p>Jenkins | Docker | GitHub Actions | CI/CD</p>
           </article>
-          <article class="knowledge-card reveal">
-            <img src="all_eliments/deep_knowladge/img_2.png" alt="Docker article preview" loading="lazy" />
-            <div class="knowledge-card__content">
-              <h3>Ever Wondered About Docker? 🐳</h3>
-              <p>Vm | Docker | Php | Laravel</p>
-            </div>
+
+          <article class="knowledge-card reveal reveal-delay-1">
+            <a class="knowledge-card__media" href="https://medium.com/@abirall" target="_blank" rel="noopener"
+              tabindex="-1" aria-hidden="true">
+              <picture>
+                <source srcset="assets/img/knowledge/knowledge-2.webp" type="image/webp" />
+                <img src="assets/img/knowledge/knowledge-2.png" width="612" height="459"
+                  alt="Article cover: Ever Wondered About Docker?" loading="lazy" decoding="async" />
+              </picture>
+              <span class="knowledge-card__badge">
+                <img src="assets/icons/medium.svg" width="30" height="30" alt="" loading="lazy" />
+              </span>
+            </a>
+            <h3>
+              <a href="https://medium.com/@abirall" target="_blank" rel="noopener">
+                Mastering Docker: From Container Deployments
+              </a>
+            </h3>
+            <p>Docker | Linux | Networking | DevOps</p>
           </article>
-          <article class="knowledge-card reveal">
-            <img src="all_eliments/deep_knowladge/img_3.png" alt="Kubernetes services article preview" loading="lazy" />
-            <div class="knowledge-card__content">
-              <h3>Kubernetes Services &amp; Networking: Connecting Your Containerized Applications ☸️</h3>
-              <p>Vm | Docker | Php | Laravel</p>
-            </div>
+
+          <article class="knowledge-card reveal reveal-delay-2">
+            <a class="knowledge-card__media" href="https://medium.com/@abirall" target="_blank" rel="noopener"
+              tabindex="-1" aria-hidden="true">
+              <picture>
+                <source srcset="assets/img/knowledge/knowledge-3.webp" type="image/webp" />
+                <img src="assets/img/knowledge/knowledge-3.png" width="612" height="459"
+                  alt="Article cover: Kubernetes Services and Networking" loading="lazy" decoding="async" />
+              </picture>
+              <span class="knowledge-card__badge">
+                <img src="assets/icons/medium.svg" width="30" height="30" alt="" loading="lazy" />
+              </span>
+            </a>
+            <h3>
+              <a href="https://medium.com/@abirall" target="_blank" rel="noopener">
+                Kubernetes Explained with Practical Examples
+              </a>
+            </h3>
+            <p>Kubernetes | CKA | Networking | Cloud</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="about-bottom" aria-labelledby="about-bottom-title">
+    <!-- ================= About ================= -->
+    <section class="about section" id="about" aria-labelledby="about-title">
       <div class="shell">
-        <span class="about-bottom__word" aria-hidden="true">ABOUT</span>
-        <div class="about-bottom__gallery reveal" aria-hidden="true">
-          <img src="all_eliments/About_section/img_1.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_2.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_3.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_4.png" alt="" loading="lazy" />
-          <img src="all_eliments/About_section/img_5.png" alt="" loading="lazy" />
+        <span class="about__word" aria-hidden="true">ABOUT</span>
+
+        <div class="about__gallery reveal" role="group" aria-label="Photos of Abir at work">
+          <picture>
+            <source srcset="assets/img/about/about-1.webp" type="image/webp" />
+            <img src="assets/img/about/about-1.png" width="387" height="387" alt="Working on a laptop" loading="lazy"
+              decoding="async" />
+          </picture>
+          <picture>
+            <source srcset="assets/img/about/about-2.webp" type="image/webp" />
+            <img src="assets/img/about/about-2.png" width="386" height="386" alt="Team reviewing plans together"
+              loading="lazy" decoding="async" />
+          </picture>
+          <picture>
+            <source srcset="assets/img/about/about-3.webp" type="image/webp" />
+            <img src="assets/img/about/about-3.png" width="386" height="386" alt="Portrait of Abir Al Zubayer outdoors"
+              loading="lazy" decoding="async" />
+          </picture>
+          <picture>
+            <source srcset="assets/img/about/about-4.webp" type="image/webp" />
+            <img src="assets/img/about/about-4.png" width="386" height="386" alt="Colleagues in a client meeting"
+              loading="lazy" decoding="async" />
+          </picture>
+          <picture>
+            <source srcset="assets/img/about/about-5.webp" type="image/webp" />
+            <img src="assets/img/about/about-5.png" width="386" height="386" alt="Team collaborating around a table"
+              loading="lazy" decoding="async" />
+          </picture>
         </div>
-        <article class="about-bottom__box reveal">
-          <h2 id="about-bottom-title">About Me <img src="all_eliments/About_section/eye_icon.svg" alt="" /></h2>
+
+        <article class="about__box reveal">
+          <div class="about__box-head">
+            <h2 id="about-title">About Me</h2>
+            <img src="assets/icons/eye.svg" width="28" height="28" alt="" loading="lazy" />
+          </div>
           <p>
-            I'm a DevOps Engineer with a strong foundation in Computer Science and
-            practical development. With over 5 years in the tech industry, I bring
-            a unique blend of engineering precision and system-level thinking.
+            I'm a DevOps Engineer with a strong foundation in Computer Science and product
+            development. With over 7 years in the tech industry, I bring a unique blend of
+            engineering precision and system-level thinking.
           </p>
           <p>
-            I design and improve scalable cloud infrastructure, automate CI/CD
-            pipelines, and build containerized production systems using AWS, Docker,
-            Kubernetes, and modern DevOps practices.
+            I design and deploy scalable cloud infrastructure, automate CI/CD pipelines, and
+            build containerized production systems using AWS, Docker, Kubernetes, and modern
+            DevOps practices.
           </p>
           <p>
-            My goal is simple: build reliable systems that help teams move faster
-            with confidence.
+            My goal is simple: build reliable systems that help teams move faster with confidence.
           </p>
         </article>
       </div>
     </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="contact__panel shell reveal">
-        <div>
-          <h2 id="contact-title">Ready to Elevate Your Skills ,<br />Lets solve Together</h2>
-          <ul class="contact__list" aria-label="Contact details">
-            <li><img src="all_eliments/footer_section/call_icon.svg" alt="" /><a href="tel:+8801756759642">+880 17567
-                59642</a></li>
-            <li><img src="all_eliments/footer_section/mail_icon.svg" alt="" /><a
-                href="mailto:abiralzubayer0@gmail.com">abiralzubayer0@gmail.com</a></li>
-          </ul>
-        </div>
-        <div class="contact__copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus felis
-            velit, accumsan quis accumsan id, blandit in mauris.
-          </p>
-          <a class="btn btn--gold btn--arrow" href="mailto:abiralzubayer0@gmail.com">
-            Contact Abir
-            <svg aria-hidden="true" viewBox="0 0 24 24">
-              <path d="M7 17 17 7m0 0H9m8 0v8" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__inner shell">
-      <a class="brand" href="#top">
-        <img src="logo/Header_logo.svg" width="28" height="25" alt="" />
-        <span>Abir Al Zubayer</span>
-      </a>
-      <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-      </nav>
-      <div class="footer__socials">
-        <a href="https://github.com/abirall" target="_blank" rel="noopener" aria-label="GitHub"><img
-            src="all_eliments/footer_section/gitHub_icon.svg" alt="" /></a>
-        <a href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener" aria-label="LinkedIn"><img
-            src="all_eliments/footer_section/linkend_icon.svg" alt="" /></a>
-        <a href="https://youtube.com/@abiralzubayer" target="_blank" rel="noopener" aria-label="YouTube"><img
-            src="all_eliments/footer_section/youtube_icon.svg" alt="" /></a>
-        <a href="https://medium.com/@abirall" target="_blank" rel="noopener" aria-label="Medium"><img
-            src="all_eliments/footer_section/medium_icon.svg" alt="" /></a>
+  <!-- ================= Footer ================= -->
+  <footer class="footer" id="contact">
+    <div class="shell">
+      <div class="footer__card">
+        <section class="contact reveal" aria-labelledby="contact-title">
+          <div>
+            <h2 id="contact-title">Ready to Elevate Your Skills ,<br />Lets solve Together</h2>
+            <ul class="contact__list">
+              <li>
+                <img src="assets/icons/call.svg" width="22" height="22" alt="" loading="lazy" />
+                <a href="tel:+8801756759642">+880 17567 59642</a>
+              </li>
+              <li>
+                <img src="assets/icons/mail.svg" width="22" height="22" alt="" loading="lazy" />
+                <a href="mailto:abiralzubayer0@gmail.com">abiralzubayer0@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__aside">
+            <p>
+              Build scalable, secure cloud infrastructure with production ready architectures. Automate deployment
+              workflows to eliminate manual bottlenecks and speed up releases.
+            </p>
+            <div class="contact__cta">
+              <a class="btn btn--outline-gold" href="mailto:abiralzubayer0@gmail.com">Contact&nbsp; Abir</a>
+              <a class="btn-tile" href="mailto:abiralzubayer0@gmail.com" aria-label="Email Abir Al Zubayer">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer__bar">
+          <a class="brand" href="#top">
+            <img src="assets/logo/mark.svg" width="30" height="27" alt="" loading="lazy" />
+            <span>Abir Al Zubayer</span>
+          </a>
+
+          <nav class="footer__nav" aria-label="Footer">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#about" class="is-active">About</a>
+          </nav>
+
+          <div class="footer__socials">
+            <a href="https://github.com/abirall" target="_blank" rel="noopener" aria-label="GitHub">
+              <img src="assets/icons/github.svg" width="40" height="40" alt="" loading="lazy" />
+            </a>
+            <a href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <img src="assets/icons/linkedin.svg" width="40" height="40" alt="" loading="lazy" />
+            </a>
+            <a href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener" aria-label="YouTube">
+              <img src="assets/icons/youtube.svg" width="40" height="40" alt="" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&copy; Abir Al Zubayer 2018–2026. All rights reserved</p>
       </div>
     </div>
-    <p class="footer__copy shell">&copy; Abir Al Zubayer 2018-2026. All rights reserved</p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

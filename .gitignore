@@ -1,5 +1,76 @@
-Abir_Website.pdf
-inprove_sections.jpg
-website_ui.png
-guidelines.txt
-details.txt
+# OS and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.code-workspace
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+*.local.*
+
+# Logs, temp files, and backups
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.pid
+
+# Python cache files (used by local helper scripts)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js local dependencies and caches
+node_modules/
+.tools/node_modules/
+.parcel-cache/
+.vite/
+.cache/
+coverage/
+
+# Local helper artifacts and generated output
+.tools/slices/
+.tools/z/
+.tools/shot/
+.tools/shots/
+.tools/render/
+.tools/**/*.log
+.tools/**/*.tmp
+.tools/**/*.bak
+.tools/**/*.orig
+.tools/**/*.rej
+.tools/**/*.png
+
+# Claude / Copilot local workspace data
+.claude/
+
+# Common build outputs
+build/
+dist/
+out/
+tmp/
+temp/
+
+# Archives and design source files
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.psd
+*.ai
+*.sketch
+*.xcf
+Website_Ui.pdf

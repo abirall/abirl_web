@@ -9,4 +9,29 @@ mail: "abiralzubayer0@gmail.com"
 
 medium_link: "https://medium.com/@abirall"   #all the portfolio project read more button will go with the link.
 
-youtube: "youtube.com/@abiralzubayer"
+youtube: "https://www.youtube.com/@AbirDevOps"
+
+
+
+
+## Recent Work
+
+1. Kubernetes Monitoring
+    January 21, 2025
+    project link : "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFoj_34BuzrFwqrI1ouUnCcX-6LTp1PJskA"
+
+
+2. GitOps Delivery
+    December 24, 2024
+    Project link : "https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFoj_34BuzrFwqrI1ouUnCcX-6LTp1PJskA"
+
+3. AWS EKS Platform
+    Nov 22, 2025
+    project link : "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFoj_34BuzrFwqrI1ouUnCcX-6LTp1PJskA"
+
+
+# 8th Sections
+    Deep Knowledge
+    Learn with Abir Practical Skills & Real-World Knowledge
+    all project link will be: "https://medium.com/@abirall"
+    

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found — Abir Al Zubayer</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" href="assets/logo/mark.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <style>
+    .oops {
+      min-height: 100svh;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      padding: var(--sp-6);
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .oops::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      z-index: -1;
+      background:
+        radial-gradient(38% 45% at 12% 24%, rgb(186 214 255 / 45%) 0%, transparent 70%),
+        radial-gradient(36% 42% at 32% 78%, rgb(255 226 178 / 50%) 0%, transparent 72%),
+        radial-gradient(42% 48% at 74% 30%, rgb(226 214 255 / 45%) 0%, transparent 70%);
+      filter: blur(10px);
+    }
+
+    .oops img {
+      width: 56px;
+      height: 50px;
+      margin-inline: auto;
+      margin-bottom: var(--sp-5);
+    }
+
+    .oops__code {
+      font-size: clamp(4.5rem, 2rem + 14vw, 9rem);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      color: var(--slate-panel);
+    }
+
+    .oops h1 {
+      font-size: var(--fs-h3);
+      margin-block: var(--sp-4) var(--sp-3);
+      color: var(--ink);
+    }
+
+    .oops p {
+      color: var(--slate);
+      max-width: 46ch;
+      margin-inline: auto;
+      margin-bottom: var(--sp-6);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="oops">
+    <div>
+      <img src="assets/logo/mark.svg" alt="Abir Al Zubayer" />
+      <p class="oops__code">404</p>
+      <h1>This page took a wrong turn</h1>
+      <p>
+        The page you're looking for doesn't exist or has moved. Let's get you back to
+        something that does.
+      </p>
+      <a class="btn btn--gold" href="/">Back to home</a>
+    </div>
+  </main>
+</body>
+
+</html>
