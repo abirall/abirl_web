@@ -35,7 +35,7 @@
   <meta property="profile:last_name" content="Zubayer" />
   <meta property="profile:username" content="abirall" />
   <meta name="twitter:card" content="summary_large_image" />
-  
+
   <meta name="twitter:title" content="Abir Al Zubayer - DevOps Engineer in Bangladesh" />
   <meta name="twitter:description"
     content="DevOps and cloud engineer in Bangladesh building secure, scalable infrastructure with Kubernetes, Docker, AWS, Azure, Terraform, and automated CI/CD." />
@@ -62,6 +62,7 @@
   <link rel="preload" as="image" href="assets/img/hero/abir-profile.webp" type="image/webp" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
 
   <script type="application/ld+json">
   {
@@ -159,20 +160,19 @@
       },
       {
         "@type": "ItemList",
-        "@id": "https://alzubayer.com/#recent-work",
-        "name": "Recent DevOps work by Abir Al Zubayer",
-        "itemListOrder": "https://schema.org/ItemListOrderDescending",
-        "numberOfItems": 3,
+        "@id": "https://alzubayer.com/#projects",
+        "name": "DevOps and cloud project case studies by Abir Al Zubayer",
+        "numberOfItems": 5,
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "item": {
               "@type": "CreativeWork",
-              "name": "Kubernetes Monitoring",
-              "description": "A complete observability solution for Kubernetes clusters and cloud resources, integrating monitoring, logging, and alerting.",
-              "about": ["Kubernetes", "Prometheus", "Grafana", "Observability"],
-              "url": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG",
+              "name": "Cloud Cost Optimizer",
+              "description": "A cloud financial management platform that attributes AWS spend to teams and environments, detects idle and over-provisioned resources, and routes every optimisation through Terraform and a reviewed pull request.",
+              "about": ["AWS", "FinOps", "AWS Cost Explorer", "Terraform", "Amazon ECS"],
+              "url": "https://alzubayer.com/project.html?p=cloud-cost-optimizer",
               "author": { "@id": "https://alzubayer.com/#abir" }
             }
           },
@@ -181,10 +181,11 @@
             "position": 2,
             "item": {
               "@type": "CreativeWork",
-              "name": "GitOps Delivery",
-              "description": "GitOps delivery on Kubernetes with version-controlled configuration, reducing deployment errors through repeatable releases.",
-              "about": ["GitOps", "Kubernetes", "CI/CD", "ArgoCD"],
-              "url": "https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv",
+              "name": "CloudWatch Monitoring & GitOps Platform",
+              "description": "An observability and deployment platform combining AWS CloudWatch, Prometheus, Grafana, Alertmanager, and Loki with Argo CD GitOps delivery on Kubernetes.",
+              "about": ["Kubernetes", "Amazon CloudWatch", "Prometheus", "Grafana", "Argo CD", "Observability"],
+              "url": "https://alzubayer.com/project.html?p=cloudwatch-monitoring-gitops",
+              "sameAs": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG",
               "author": { "@id": "https://alzubayer.com/#abir" }
             }
           },
@@ -194,9 +195,35 @@
             "item": {
               "@type": "CreativeWork",
               "name": "AWS EKS Platform",
-              "description": "AWS infrastructure provisioned and managed with Terraform and Kubernetes best practices, including automated CI/CD.",
-              "about": ["AWS", "Amazon EKS", "Terraform", "Kubernetes", "CI/CD"],
-              "url": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF",
+              "description": "A reusable Kubernetes platform on Amazon EKS provisioned with Terraform across three Availability Zones, with Karpenter, HPA and KEDA autoscaling, IRSA, and Argo CD delivery.",
+              "about": ["AWS", "Amazon EKS", "Terraform", "Kubernetes", "Karpenter", "Argo CD"],
+              "url": "https://alzubayer.com/project.html?p=aws-eks-platform",
+              "sameAs": "https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF",
+              "author": { "@id": "https://alzubayer.com/#abir" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "GitOps Delivery Platform",
+              "description": "A continuous delivery platform that makes Git the deployment control plane: immutable image tags in Amazon ECR, Argo CD reconciliation, and Argo Rollouts canary analysis with automated rollback.",
+              "about": ["GitOps", "Kubernetes", "CI/CD", "Argo CD", "Argo Rollouts", "Helm"],
+              "url": "https://alzubayer.com/project.html?p=gitops-delivery-platform",
+              "sameAs": "https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv",
+              "author": { "@id": "https://alzubayer.com/#abir" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Multi-Application AWS ECS Deployment Platform",
+              "description": "A Terraform-managed platform running many independent applications on a shared Amazon ECS cluster behind one Application Load Balancer, deployed from GitHub Actions using GitHub OIDC.",
+              "about": ["AWS", "Amazon ECS", "Terraform", "Application Load Balancer", "GitHub Actions"],
+              "url": "https://alzubayer.com/project.html?p=multi-app-ecs-platform",
               "author": { "@id": "https://alzubayer.com/#abir" }
             }
           }
@@ -383,6 +410,395 @@
       </div>
     </section>
 
+    <!-- ================= Core mastery + featured projects ================= -->
+    <section class="shell shell--wide" id="projects" aria-labelledby="mastery-title">
+      <div class="mastery reveal">
+        <p class="mastery__eyebrow">Core Mastery</p>
+
+        <div class="mastery__grid">
+          <div>
+            <h2 id="mastery-title">
+              Kubernetes &amp;<br /><span class="text-gold">Docker</span> Mastery
+            </h2>
+            <p class="mastery__lead">
+              Delivering <strong>Production-Grade Container Orchestration</strong> and robust
+              <strong>Infrastructure-as-Code at Scale</strong>. My approach ensures resilience,
+              security, and automated scalability.
+            </p>
+            <div class="mastery__tags">
+              <span class="mastery-tag">
+                <img src="assets/icons/cluster.svg" width="20" height="20" alt="" loading="lazy" />
+                Multi-Cluster Orchestration
+              </span>
+              <span class="mastery-tag">
+                <img src="assets/icons/shield.svg" width="20" height="20" alt="" loading="lazy" />
+                Hardened Security Posture
+              </span>
+            </div>
+          </div>
+
+          <div class="mastery__cards">
+            <article class="mastery-card">
+              <div class="mastery-card__head">
+                <h3>Zero-Trust K8s Networking</h3>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="14" width="20" height="7" rx="2" />
+                  <path d="M6 17.5h.01M10 17.5h.01M12 10a4 4 0 0 1 4-4M12 6a8 8 0 0 1 8-8" />
+                </svg>
+              </div>
+              <p>
+                Implementing Istio service mesh and Calico network policies to ensure granular
+                security and mutual TLS across all microservices.
+              </p>
+              <div class="meter" role="img" aria-label="Zero-trust networking maturity: 94 percent">
+                <span class="meter__fill" style="--meter-value: 95%; --meter-color: #fdf3dc"></span>
+              </div>
+            </article>
+
+            <article class="mastery-card">
+              <div class="mastery-card__head">
+                <h3>GitOps-Driven Delivery</h3>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#f4a300" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="2.5" />
+                  <circle cx="6" cy="18" r="2.5" />
+                  <path d="M6 8.5v7M18 8v3a4 4 0 0 1-4 4h-3" />
+                  <path d="m14 12 4-4 4 4" />
+                </svg>
+              </div>
+              <p>
+                Leveraging ArgoCD and Helm to treat cluster state as code, ensuring 100%
+                environment parity and rapid disaster recovery.
+              </p>
+              <div class="meter" role="img" aria-label="GitOps delivery maturity: 88 percent">
+                <span class="meter__fill" style="--meter-value: 92%; --meter-color: #f4a300"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Featured projects live inside the same slate panel.
+             Card copy is authored here; the full case study for each project is
+             defined once in assets/js/projects-data.js and rendered by
+             project.html?p=<slug>. Keep the slugs below in sync with that file. -->
+        <div class="featured">
+          <p class="featured__eyebrow">In-Depth Case Studies</p>
+          <h2 class="featured__title">Featured Projects</h2>
+          <p class="featured__lead">
+            Two flagship platforms, documented end to end &mdash; the problem, the architecture,
+            the infrastructure as code behind it, and the guardrails that keep it safe in
+            production.
+          </p>
+
+          <div class="featured__grid">
+            <article class="article-card reveal" style="--card-tint: var(--tint-cream); --card-accent: #d98f00">
+              <picture>
+                <source srcset="assets/img/projects/featured-1.webp" type="image/webp" />
+                <img src="assets/img/projects/featured-1.png" width="1400" height="933"
+                  alt="Cloud cost optimizer dashboard illustration" loading="lazy" decoding="async" />
+              </picture>
+              <div class="article-card__body">
+                <p class="article-card__kicker">FinOps Platform — 7 MIN READ</p>
+                <h3>Cloud Cost Optimizer</h3>
+                <p class="article-card__date">October 24, 2023</p>
+                <p class="article-card__excerpt">
+                  Attributes AWS spend, then rightsizes through Terraform.
+                </p>
+                <ul class="card-chips">
+                  <li class="card-chip">AWS Cost Explorer</li>
+                  <li class="card-chip">Terraform</li>
+                  <li class="card-chip">Amazon ECS</li>
+                  <li class="card-chip">FastAPI</li>
+                </ul>
+                <a class="article-card__link" href="project.html?p=cloud-cost-optimizer">
+                  Read more<span class="visually-hidden"> about Cloud Cost Optimizer</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card reveal reveal-delay-1"
+              style="--card-tint: var(--tint-lilac); --card-accent: #7c3aed">
+              <picture>
+                <source srcset="assets/img/work/work-1.webp" type="image/webp" />
+                <img src="assets/img/work/work-1.png" width="1000" height="667"
+                  alt="Kubernetes monitoring stack illustration" loading="lazy" decoding="async" />
+              </picture>
+              <div class="article-card__body">
+                <p class="article-card__kicker">Observability &amp; GitOps — 7 MIN READ</p>
+                <h3>CloudWatch Monitoring</h3>
+                <p class="article-card__date">October 24, 2023</p>
+                <p class="article-card__excerpt">
+                  CloudWatch and Prometheus feeding Argo CD delivery.
+                </p>
+                <ul class="card-chips">
+                  <li class="card-chip">CloudWatch</li>
+                  <li class="card-chip">Prometheus</li>
+                  <li class="card-chip">Grafana</li>
+                  <li class="card-chip">Argo CD</li>
+                </ul>
+                <a class="article-card__link" href="project.html?p=cloudwatch-monitoring-gitops">
+                  Read more<span class="visually-hidden"> about the CloudWatch Monitoring &amp; GitOps Platform</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Recent work ================= -->
+    <section class="section" id="recent-work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow">Portfolio</p>
+            <h2 class="section-title" id="work-title">Recent Work</h2>
+            <p class="section-lead">
+              Three platform builds from the same toolchain &mdash; Terraform for everything that
+              can be provisioned, Git as the deployment control plane, and observability wired in
+              before the first release.
+            </p>
+          </div>
+          <div class="btn-pair reveal">
+            <a class="btn" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener">
+              Let's Connect
+            </a>
+            <a class="btn-tile" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener"
+              aria-label="Connect with Abir on LinkedIn">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 17 17 7m0 0H9m8 0v8" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="work__grid">
+          <article class="work-card reveal">
+            <picture>
+              <source srcset="assets/img/work/work-3.webp" type="image/webp" />
+              <img src="assets/img/work/work-3.png" width="1000" height="667" alt="AWS EKS platform illustration"
+                loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
+              <p class="work-card__kicker">Platform Engineering</p>
+              <h3>AWS EKS Platform</h3>
+              <p class="work-card__date">Date: 12.24.2023 · 8 min read</p>
+              <p>
+                A reusable Kubernetes platform on Amazon EKS across three Availability Zones,
+                provisioned with Terraform and delivered through Argo CD.
+              </p>
+              <ul class="card-chips">
+                <li class="card-chip">Amazon EKS</li>
+                <li class="card-chip">Terraform</li>
+                <li class="card-chip">Karpenter</li>
+                <li class="card-chip">Argo CD</li>
+              </ul>
+              <a class="work-card__link" href="project.html?p=aws-eks-platform">
+                Read more<span class="visually-hidden"> — AWS EKS Platform</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-card reveal reveal-delay-1">
+            <picture>
+              <source srcset="assets/img/work/work-2.webp" type="image/webp" />
+              <img src="assets/img/work/work-2.png" width="1000" height="667"
+                alt="GitOps continuous delivery illustration" loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
+              <p class="work-card__kicker">Continuous Delivery</p>
+              <h3>GitOps Delivery</h3>
+              <p class="work-card__date">Date: 12.24.2023 · 7 min read</p>
+              <p>
+                Git as the deployment control plane: immutable image tags, Argo CD reconciliation,
+                and canary analysis with automated rollback.
+              </p>
+              <ul class="card-chips">
+                <li class="card-chip">Argo CD</li>
+                <li class="card-chip">Argo Rollouts</li>
+                <li class="card-chip">Helm</li>
+                <li class="card-chip">GitHub Actions</li>
+              </ul>
+              <a class="work-card__link" href="project.html?p=gitops-delivery-platform">
+                Read more<span class="visually-hidden"> — GitOps Delivery Platform</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-card reveal reveal-delay-2">
+            <picture>
+              <source srcset="assets/img/projects/featured-2.webp" type="image/webp" />
+              <img src="assets/img/projects/featured-2.png" width="1400" height="933"
+                alt="Multi-application deployment platform illustration" loading="lazy" decoding="async" />
+            </picture>
+            <div class="work-card__body">
+              <p class="work-card__kicker">Shared Platform</p>
+              <h3>Multi-App ECS Platform</h3>
+              <p class="work-card__date">Date: 12.24.2023 · 8 min read</p>
+              <p>
+                Many independent applications on one Amazon ECS cluster behind a single load
+                balancer, deployed from GitHub Actions with no long-lived AWS keys.
+              </p>
+              <ul class="card-chips">
+                <li class="card-chip">Amazon ECS</li>
+                <li class="card-chip">Terraform</li>
+                <li class="card-chip">ALB + ACM</li>
+                <li class="card-chip">GitHub OIDC</li>
+              </ul>
+              <a class="work-card__link" href="project.html?p=multi-app-ecs-platform">
+                Read more<span class="visually-hidden"> — Multi-Application AWS ECS Deployment Platform</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Compact index of every case study, so the whole Projects region is
+             reachable from one place. -->
+        <div class="case-strip reveal">
+          <div class="case-strip__head">
+            <p class="case-strip__title">All case studies</p>
+            <p class="case-strip__note">
+              Each page covers the problem, architecture, infrastructure, DevOps implementation,
+              key features, and outcomes.
+            </p>
+          </div>
+
+          <ul class="case-strip__list">
+            <li>
+              <a class="case-strip__link" href="project.html?p=cloud-cost-optimizer">
+                <span class="case-strip__num">1</span>
+                <span>
+                  <span class="case-strip__name">Cloud Cost Optimizer</span>
+                  <span class="case-strip__kind">Featured Project</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=cloudwatch-monitoring-gitops">
+                <span class="case-strip__num">2</span>
+                <span>
+                  <span class="case-strip__name">CloudWatch GitOps</span>
+                  <span class="case-strip__kind">Featured Project</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=aws-eks-platform">
+                <span class="case-strip__num">3</span>
+                <span>
+                  <span class="case-strip__name">EKS Platform</span>
+                  <span class="case-strip__kind">Recent Work</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=gitops-delivery-platform">
+                <span class="case-strip__num">4</span>
+                <span>
+                  <span class="case-strip__name">GitOps Delivery</span>
+                  <span class="case-strip__kind">Recent Work</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=multi-app-ecs-platform">
+                <span class="case-strip__num">5</span>
+                <span>
+                  <span class="case-strip__name">ECS Application Platform</span>
+                  <span class="case-strip__kind">Recent Work</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=production-jenkins-agent">
+                <span class="case-strip__num">6</span>
+                <span>
+                  <span class="case-strip__name">Jenkins Build Platform</span>
+                  <span class="case-strip__kind">Case Study</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=jenkins-slack-notifications">
+                <span class="case-strip__num">7</span>
+                <span>
+                  <span class="case-strip__name">Jenkins Notifications</span>
+                  <span class="case-strip__kind">Case Study</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=azure-cloud-service">
+                <span class="case-strip__num">8</span>
+                <span>
+                  <span class="case-strip__name">Azure Cloud Platform</span>
+                  <span class="case-strip__kind">Case Study</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=azure-application-deployment">
+                <span class="case-strip__num">9</span>
+                <span>
+                  <span class="case-strip__name">Azure App Deployment</span>
+                  <span class="case-strip__kind">Case Study</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="case-strip__link" href="project.html?p=terraform-infrastructure-as-code">
+                <span class="case-strip__num">10</span>
+                <span>
+                  <span class="case-strip__name">Terraform Infrastructure</span>
+                  <span class="case-strip__kind">Case Study</span>
+                </span>
+                <svg class="case-strip__arrow" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M7 17 17 7m0 0H9m8 0v8" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= Work process ================= -->
     <section class="section" id="experience" aria-labelledby="process-title">
       <div class="shell">
@@ -489,221 +905,6 @@
               Enterprise Linux. This hands-on validation sharpened my skills in advanced system administration, shell
               scripting, automated storage provisioning, and infrastructure security hardening.
             </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= Core mastery + featured projects ================= -->
-    <section class="shell shell--wide" id="projects" aria-labelledby="mastery-title">
-      <div class="mastery reveal">
-        <p class="mastery__eyebrow">Core Mastery</p>
-
-        <div class="mastery__grid">
-          <div>
-            <h2 id="mastery-title">
-              Kubernetes &amp;<br /><span class="text-gold">Docker</span> Mastery
-            </h2>
-            <p class="mastery__lead">
-              Delivering <strong>Production-Grade Container Orchestration</strong> and robust
-              <strong>Infrastructure-as-Code at Scale</strong>. My approach ensures resilience,
-              security, and automated scalability.
-            </p>
-            <div class="mastery__tags">
-              <span class="mastery-tag">
-                <img src="assets/icons/cluster.svg" width="20" height="20" alt="" loading="lazy" />
-                Multi-Cluster Orchestration
-              </span>
-              <span class="mastery-tag">
-                <img src="assets/icons/shield.svg" width="20" height="20" alt="" loading="lazy" />
-                Hardened Security Posture
-              </span>
-            </div>
-          </div>
-
-          <div class="mastery__cards">
-            <article class="mastery-card">
-              <div class="mastery-card__head">
-                <h3>Zero-Trust K8s Networking</h3>
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="14" width="20" height="7" rx="2" />
-                  <path d="M6 17.5h.01M10 17.5h.01M12 10a4 4 0 0 1 4-4M12 6a8 8 0 0 1 8-8" />
-                </svg>
-              </div>
-              <p>
-                Implementing Istio service mesh and Calico network policies to ensure granular
-                security and mutual TLS across all microservices.
-              </p>
-              <div class="meter" role="img" aria-label="Zero-trust networking maturity: 94 percent">
-                <span class="meter__fill" style="--meter-value: 95%; --meter-color: #fdf3dc"></span>
-              </div>
-            </article>
-
-            <article class="mastery-card">
-              <div class="mastery-card__head">
-                <h3>GitOps-Driven Delivery</h3>
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#f4a300" stroke-width="1.8"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="6" cy="6" r="2.5" />
-                  <circle cx="6" cy="18" r="2.5" />
-                  <path d="M6 8.5v7M18 8v3a4 4 0 0 1-4 4h-3" />
-                  <path d="m14 12 4-4 4 4" />
-                </svg>
-              </div>
-              <p>
-                Leveraging ArgoCD and Helm to treat cluster state as code, ensuring 100%
-                environment parity and rapid disaster recovery.
-              </p>
-              <div class="meter" role="img" aria-label="GitOps delivery maturity: 88 percent">
-                <span class="meter__fill" style="--meter-value: 92%; --meter-color: #f4a300"></span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Featured projects live inside the same slate panel -->
-        <div class="featured">
-          <h2 class="featured__title">Featured Projects</h2>
-
-          <div class="featured__grid">
-            <article class="article-card reveal" style="--card-tint: var(--tint-cream); --card-accent: #d98f00">
-              <picture>
-                <source srcset="assets/img/projects/featured-1.webp" type="image/webp" />
-                <img src="assets/img/projects/featured-1.png" width="1400" height="1400"
-                  alt="Cloud cost optimizer dashboard illustration" loading="lazy" decoding="async" />
-              </picture>
-              <div class="article-card__body">
-                <p class="article-card__kicker">Letest — 2 MIN READ</p>
-                <h3>Cloud Cost Optimizer</h3>
-                <p class="article-card__date">October 24, 2023</p>
-                <p class="article-card__excerpt">
-                  Planned an AI-driven platform that surfaces idle spend across multi-account
-                  cloud estates and recommends rightsizing automatically.
-                </p>
-                <a class="article-card__link" href="https://medium.com/@abirall" target="_blank" rel="noopener">
-                  Read more<span class="visually-hidden"> about Cloud Cost Optimizer</span>
-                </a>
-              </div>
-            </article>
-
-            <article class="article-card reveal reveal-delay-1"
-              style="--card-tint: var(--tint-lilac); --card-accent: #7c3aed">
-              <picture>
-                <source srcset="assets/img/projects/featured-2.webp" type="image/webp" />
-                <img src="assets/img/projects/featured-2.png" width="1400" height="1400"
-                  alt="Internal developer platform illustration" loading="lazy" decoding="async" />
-              </picture>
-              <div class="article-card__body">
-                <p class="article-card__kicker">Letest — 2 MIN READ</p>
-                <h3>Developer Platform</h3>
-                <p class="article-card__date">October 24, 2023</p>
-                <p class="article-card__excerpt">
-                  Planned a self-service platform giving product teams golden paths for
-                  provisioning, deployment, and observability without ticket queues.
-                </p>
-                <a class="article-card__link" href="https://medium.com/@abirall" target="_blank" rel="noopener">
-                  Read more<span class="visually-hidden"> about Developer Platform</span>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= Recent work ================= -->
-    <section class="section" aria-labelledby="work-title">
-      <div class="shell">
-        <div class="section-head">
-          <div class="reveal">
-            <p class="eyebrow">Portfolio</p>
-            <h2 class="section-title" id="work-title">Recent Work</h2>
-          </div>
-          <div class="btn-pair reveal">
-            <a class="btn" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener">
-              Let's Connect
-            </a>
-            <a class="btn-tile" href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener"
-              aria-label="Connect with Abir on LinkedIn">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M7 17 17 7m0 0H9m8 0v8" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="work__grid">
-          <article class="work-card reveal">
-            <picture>
-              <source srcset="assets/img/work/work-1.webp" type="image/webp" />
-              <img src="assets/img/work/work-1.png" width="1000" height="563"
-                alt="Kubernetes monitoring stack illustration" loading="lazy" decoding="async" />
-            </picture>
-            <div class="work-card__body">
-              <h3>Kubernetes Monitoring</h3>
-              <p class="work-card__date">Date: 12.24.2023</p>
-              <p>
-                Designed a complete observability solution for Kubernetes clusters and cloud
-                resources. Integrated monitoring, logging, and alerting.
-              </p>
-              <a class="work-card__link"
-                href="https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-activity-7371974083988676609-UWhG"
-                target="_blank" rel="noopener">
-                View project<span class="visually-hidden"> — Kubernetes Monitoring</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M7 17 17 7m0 0H9m8 0v8" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="work-card reveal reveal-delay-1">
-            <picture>
-              <source srcset="assets/img/work/work-2.webp" type="image/webp" />
-              <img src="assets/img/work/work-2.png" width="1000" height="563"
-                alt="GitOps continuous delivery illustration" loading="lazy" decoding="async" />
-            </picture>
-            <div class="work-card__body">
-              <h3>GitOps Delivery</h3>
-              <p class="work-card__date">Date: 12.24.2023</p>
-              <p>
-                Kubernetes and version-controlled configurations. Reduced deployment errors
-                through consistent and repeatable delivery.
-              </p>
-              <a class="work-card__link"
-                href="https://www.linkedin.com/posts/abir-al-zubayer_cicd-secrets-activity-7381379909899718656-xfVv"
-                target="_blank" rel="noopener">
-                View project<span class="visually-hidden"> — GitOps Delivery</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M7 17 17 7m0 0H9m8 0v8" />
-                </svg>
-              </a>
-            </div>
-          </article>
-
-          <article class="work-card reveal reveal-delay-2">
-            <picture>
-              <source srcset="assets/img/work/work-3.webp" type="image/webp" />
-              <img src="assets/img/work/work-3.png" width="1000" height="563" alt="AWS EKS platform illustration"
-                loading="lazy" decoding="async" />
-            </picture>
-            <div class="work-card__body">
-              <h3>AWS EKS Platform</h3>
-              <p class="work-card__date">Date: 12.24.2023</p>
-              <p>
-                Provisioned and managed AWS infrastructure using Terraform and Kubernetes best
-                practices. Implemented automated CI/CD.
-              </p>
-              <a class="work-card__link"
-                href="https://www.linkedin.com/posts/abir-al-zubayer_kubernetes-ingress-activity-7373041123029590016-BFmF"
-                target="_blank" rel="noopener">
-                View project<span class="visually-hidden"> — AWS EKS Platform</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M7 17 17 7m0 0H9m8 0v8" />
-                </svg>
-              </a>
-            </div>
           </article>
         </div>
       </div>
