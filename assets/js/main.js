@@ -1,5 +1,5 @@
 /**
- * Abir Al Zubayer — portfolio interactions
+ * Abir Al Zubayer portfolio interactions
  *
  * - Mobile navigation (toggle, escape, outside click, focus return)
  * - Scroll-spy for active nav state

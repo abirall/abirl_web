@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Abir Al Zubayer — Portfolio
+   Abir Al Zubayer  Portfolio
    Project data: single source of truth for the Projects section (index.html)
    and for every case-study page rendered by project.html?p=<slug>.
 
@@ -145,7 +145,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'The platform treats cost as an engineering signal rather than a finance report. Billing data, CloudWatch utilisation, and resource inventory are collected on a schedule, joined into a single model, and analysed by three independent engines — cost analysis, rightsizing, and anomaly detection — before anything reaches a human as a recommendation.'
+            v: 'The platform treats cost as an engineering signal rather than a finance report. Billing data, CloudWatch utilisation, and resource inventory are collected on a schedule, joined into a single model, and analysed by three independent engines cost analysis, rightsizing, and anomaly detection before anything reaches a human as a recommendation.'
           },
           {
             t: 'p',
@@ -162,7 +162,7 @@
           },
           {
             t: 'p',
-            v: 'Rightsizing deliberately errs on the safe side. Recommendations weigh CPU, memory, network, and disk utilisation, request volume, historical workload, and <strong>peak</strong> utilisation — not only averages — so the engine avoids aggressive suggestions that would trade cost for a performance regression.'
+            v: 'Rightsizing deliberately errs on the safe side. Recommendations weigh CPU, memory, network, and disk utilisation, request volume, historical workload, and <strong>peak</strong> utilisation not only averages so the engine avoids aggressive suggestions that would trade cost for a performance regression.'
           }
         ]
       },
@@ -348,7 +348,7 @@
               'A separate, tightly controlled role for any optimisation action.',
               'OAuth / OIDC authentication with role-based access control across Admin, FinOps, DevOps, and Viewer roles.',
               'Credentials held in AWS Secrets Manager, scoped per environment.',
-              '<strong>No static AWS credentials inside GitHub Actions</strong> — the pipeline authenticates through GitHub OIDC.'
+              '<strong>No static AWS credentials inside GitHub Actions</strong> the pipeline authenticates through GitHub OIDC.'
             ]
           }
         ]
@@ -369,7 +369,7 @@
               },
               {
                 h: 'Idle resource detection',
-                p: 'Flags resources that cost money while providing little value — idle instances, unused Elastic IPs, unattached volumes, old snapshots, unused load balancers, and forgotten environments.'
+                p: 'Flags resources that cost money while providing little value idle instances, unused Elastic IPs, unattached volumes, old snapshots, unused load balancers, and forgotten environments.'
               },
               {
                 h: 'Rightsizing engine',
@@ -560,7 +560,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'Monitoring and deployment are usually built as separate systems by separate people, which leaves a gap exactly where incidents happen — in the minutes after a release. The design targets that gap:'
+            v: 'Monitoring and deployment are usually built as separate systems by separate people, which leaves a gap exactly where incidents happen in the minutes after a release. The design targets that gap:'
           },
           {
             t: 'list',
@@ -620,7 +620,7 @@
           },
           {
             t: 'p',
-            v: 'Instead of reporting <em>CPU = 92%</em>, the platform can report that node CPU rose to 92% because API pods increased CPU consumption following deployment <code>v2.8.4</code> — a statement an engineer can act on immediately.'
+            v: 'Instead of reporting <em>CPU = 92%</em>, the platform can report that node CPU rose to 92% because API pods increased CPU consumption following deployment <code>v2.8.4</code> a statement an engineer can act on immediately.'
           }
         ]
       },
@@ -731,7 +731,7 @@
           { t: 'h', v: 'Infrastructure as code' },
           {
             t: 'p',
-            v: 'Terraform provisions the VPC, EKS, IAM, ECR, RDS, ALB, CloudWatch, S3, security groups, and networking — and also the monitoring configuration itself: CloudWatch dashboards, alarms, log groups, and IAM roles.'
+            v: 'Terraform provisions the VPC, EKS, IAM, ECR, RDS, ALB, CloudWatch, S3, security groups, and networking and also the monitoring configuration itself: CloudWatch dashboards, alarms, log groups, and IAM roles.'
           }
         ]
       },
@@ -864,7 +864,7 @@
               },
               {
                 h: 'Progressive deployment',
-                p: 'Argo Rollouts adds canary and blue/green strategies — 10% of traffic, evaluate, then 50%, then 100%, or roll back on error.'
+                p: 'Argo Rollouts adds canary and blue/green strategies 10% of traffic, evaluate, then 50%, then 100%, or roll back on error.'
               },
               {
                 h: 'Contextual alerting',
@@ -942,7 +942,7 @@
             t: 'list',
             v: [
               'Infrastructure and Kubernetes signals are correlated, so investigation starts from a root cause rather than a console tour.',
-              'Deployment history is a Git history — reviewable, attributable, and revertible.',
+              'Deployment history is a Git history reviewable, attributable, and revertible.',
               'Drift between Git and the cluster is a reported condition that Argo CD can reconcile automatically.',
               'Releases are evaluated against error rate, latency, CPU, and memory before they are promoted.',
               'Recovery is a documented flow: Terraform recreates infrastructure, Argo CD restores applications, backups restore data.'
@@ -1081,7 +1081,7 @@
           { t: 'h', v: 'Self-service, not tickets' },
           {
             t: 'p',
-            v: 'A developer starting a new application fills in a template rather than writing Kubernetes primitives. That template generates the Deployment, Service, Ingress, HPA, ServiceAccount, and monitoring wiring, commits it to the GitOps repository, and Argo CD does the rest — which is what turns an EKS cluster into an internal developer platform.'
+            v: 'A developer starting a new application fills in a template rather than writing Kubernetes primitives. That template generates the Deployment, Service, Ingress, HPA, ServiceAccount, and monitoring wiring, commits it to the GitOps repository, and Argo CD does the rest which is what turns an EKS cluster into an internal developer platform.'
           },
           { t: 'flow', v: ['Application Template', 'GitHub Repository', 'GitOps', 'Argo CD', 'EKS'] }
         ]
@@ -1194,7 +1194,7 @@
           },
           {
             t: 'p',
-            v: 'Terraform manages the VPC, subnets, NAT gateways, route tables, EKS, IAM, security groups, ECR, RDS, CloudWatch, KMS, S3, load balancers, and EKS add-ons — so the platform can be recreated from code.'
+            v: 'Terraform manages the VPC, subnets, NAT gateways, route tables, EKS, IAM, security groups, ECR, RDS, CloudWatch, KMS, S3, load balancers, and EKS add-ons so the platform can be recreated from code.'
           },
           { t: 'h', v: 'Namespace isolation' },
           {
@@ -1356,7 +1356,7 @@
               },
               {
                 h: 'Network policies',
-                p: 'Namespace-level policies allow only the paths a workload needs — web to api, api to RDS and Redis, worker to SQS — and block everything else.'
+                p: 'Namespace-level policies allow only the paths a workload needs web to api, api to RDS and Redis, worker to SQS and block everything else.'
               },
               {
                 h: 'Managed add-on set',
@@ -1550,7 +1550,7 @@
           },
           {
             t: 'p',
-            v: 'The GitOps approach reroutes the same work through a reviewable, reproducible path — and Git becomes the deployment control plane.'
+            v: 'The GitOps approach reroutes the same work through a reviewable, reproducible path and Git becomes the deployment control plane.'
           },
           {
             t: 'flow',
@@ -1563,7 +1563,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'The platform splits responsibility along a clean line. The application repository holds application code and a CI workflow, and nothing else — it does <strong>not</strong> directly control production Kubernetes resources. A separate GitOps repository holds the desired deployment state, and Argo CD is the only thing that writes to the cluster.'
+            v: 'The platform splits responsibility along a clean line. The application repository holds application code and a CI workflow, and nothing else it does <strong>not</strong> directly control production Kubernetes resources. A separate GitOps repository holds the desired deployment state, and Argo CD is the only thing that writes to the cluster.'
           },
           { t: 'h', v: 'Immutable images, never <code>latest</code>' },
           {
@@ -1690,7 +1690,7 @@
           { t: 'h', v: 'Packaging strategy' },
           {
             t: 'p',
-            v: 'Applications are packaged with Helm — a chart plus per-environment values files — which removes duplicated Kubernetes manifests. Kustomize is supported as an alternative through a base and per-environment overlays. Both are demonstrated, but one should be selected as the primary strategy for a given platform.'
+            v: 'Applications are packaged with Helm a chart plus per-environment values files which removes duplicated Kubernetes manifests. Kustomize is supported as an alternative through a base and per-environment overlays. Both are demonstrated, but one should be selected as the primary strategy for a given platform.'
           },
           {
             t: 'dia',
@@ -1842,7 +1842,7 @@
               },
               {
                 h: 'Helm and Kustomize',
-                p: 'A chart with per-environment values files, or a base with per-environment overlays — either way, environment configuration stops being copied manifests.'
+                p: 'A chart with per-environment values files, or a base with per-environment overlays either way, environment configuration stops being copied manifests.'
               },
               {
                 h: 'Pull-request deployment',
@@ -1854,7 +1854,7 @@
               },
               {
                 h: 'Canary and blue/green',
-                p: 'Argo Rollouts shifts a small slice of traffic to the new version, analyses it, and only then promotes — or rolls back automatically.'
+                p: 'Argo Rollouts shifts a small slice of traffic to the new version, analyses it, and only then promotes or rolls back automatically.'
               },
               {
                 h: 'Metrics-aware rollback',
@@ -1862,7 +1862,7 @@
               },
               {
                 h: 'Drift detection',
-                p: 'When the cluster diverges from Git — replicas changed by hand, for example — Argo CD reports OutOfSync with the reason, and can restore the Git-defined state.'
+                p: 'When the cluster diverges from Git replicas changed by hand, for example Argo CD reports OutOfSync with the reason, and can restore the Git-defined state.'
               },
               {
                 h: 'Traceable release history',
@@ -1963,7 +1963,7 @@
     groupLabel: 'Recent Work',
     source: 'Recent_Work/Developer_Platform.txt',
     tagline:
-      'One shared, Terraform-managed ECS platform hosting many independent applications behind a single load-balancing layer — with an honest account of what "zero downtime" can and cannot mean.',
+      'One shared, Terraform-managed ECS platform hosting many independent applications behind a single load-balancing layer with an honest account of what "zero downtime" can and cannot mean.',
     goal:
       'Host multiple applications without creating a completely separate AWS infrastructure stack for every application.',
     card: {
@@ -2064,7 +2064,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'A single ECS cluster runs every application as its own ECS service. One Application Load Balancer fronts them all and routes by hostname to a per-application target group. ECS — not a person — becomes responsible for scheduling and replacing application containers.'
+            v: 'A single ECS cluster runs every application as its own ECS service. One Application Load Balancer fronts them all and routes by hostname to a per-application target group. ECS not a person becomes responsible for scheduling and replacing application containers.'
           },
           {
             t: 'dia',
@@ -2125,7 +2125,7 @@
           { t: 'h', v: 'How rolling deployment avoids a gap' },
           {
             t: 'p',
-            v: 'The mechanism is deliberately unglamorous — multiple healthy tasks, ALB health checks, ECS rolling deployment, and the right deployment configuration:'
+            v: 'The mechanism is deliberately unglamorous multiple healthy tasks, ALB health checks, ECS rolling deployment, and the right deployment configuration:'
           },
           {
             t: 'dia',
@@ -2227,7 +2227,7 @@
           { t: 'h', v: 'Terraform-owned resources' },
           {
             t: 'p',
-            v: 'Terraform provisions the VPC and networking, Internet Gateway, ALB and listeners, host-based routing rules, ECS cluster and services, EC2 capacity, ECR repositories, IAM roles and policies, ACM certificates with DNS validation, Cloudflare DNS records, and CloudWatch log groups — with outputs exposing the values applications and pipelines need.'
+            v: 'Terraform provisions the VPC and networking, Internet Gateway, ALB and listeners, host-based routing rules, ECS cluster and services, EC2 capacity, ECR repositories, IAM roles and policies, ACM certificates with DNS validation, Cloudflare DNS records, and CloudWatch log groups with outputs exposing the values applications and pipelines need.'
           }
         ]
       },
@@ -2279,7 +2279,7 @@
           { t: 'h', v: 'Health checks are the contract' },
           {
             t: 'p',
-            v: 'Each application exposes a health check path that the ALB polls. That single endpoint decides whether a new task receives traffic, whether a deployment proceeds, and whether an unhealthy task is replaced — which makes health check design a first-class part of onboarding rather than an afterthought.'
+            v: 'Each application exposes a health check path that the ALB polls. That single endpoint decides whether a new task receives traffic, whether a deployment proceeds, and whether an unhealthy task is replaced which makes health check design a first-class part of onboarding rather than an afterthought.'
           },
           { t: 'h', v: 'Documented failure scenarios' },
           {
@@ -2290,7 +2290,7 @@
               { h: 'New ECS task fails', p: 'The new task never becomes healthy, so the ALB never routes to it and the old tasks keep serving traffic.' },
               { h: 'EC2 instance failure', p: 'The Auto Scaling Group replaces the instance and ECS reschedules its tasks onto healthy capacity.' },
               { h: 'ALB health check failure', p: 'The target is removed from rotation and replaced, rather than continuing to receive requests it cannot serve.' },
-              { h: 'Database failure', p: 'Recovery relies on the documented backup path — a dedicated backup server with retention, and copies in Amazon S3.' }
+              { h: 'Database failure', p: 'Recovery relies on the documented backup path a dedicated backup server with retention, and copies in Amazon S3.' }
             ]
           },
           { t: 'h', v: 'Operational baseline' },
@@ -2334,7 +2334,7 @@
               },
               {
                 h: 'Keyless CI/CD',
-                p: 'GitHub Actions authenticates to AWS through OIDC against a repository-scoped IAM role — no static AWS credentials anywhere in the pipeline.'
+                p: 'GitHub Actions authenticates to AWS through OIDC against a repository-scoped IAM role no static AWS credentials anywhere in the pipeline.'
               },
               {
                 h: 'Data-driven onboarding',
@@ -2432,7 +2432,7 @@
           },
           {
             t: 'note',
-            v: 'The source specification is explicit about its own limits: absolute zero downtime cannot be honestly guaranteed under every failure condition, and several improvements — private ECS instances, Secrets Manager integration, separate per-environment accounts, and automated rollback — are documented as recommended next steps rather than as delivered work.'
+            v: 'The source specification is explicit about its own limits: absolute zero downtime cannot be honestly guaranteed under every failure condition, and several improvements private ECS instances, Secrets Manager integration, separate per-environment accounts, and automated rollback are documented as recommended next steps rather than as delivered work.'
           }
         ]
       }
@@ -2500,7 +2500,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'A production Jenkins environment becomes unreliable when the controller is responsible for everything — from pipeline orchestration to Docker builds. The recurring problems were:'
+            v: 'A production Jenkins environment becomes unreliable when the controller is responsible for everything from pipeline orchestration to Docker builds. The recurring problems were:'
           },
           {
             t: 'list',
@@ -2541,14 +2541,14 @@
           {
             t: 'list',
             v: [
-              '<strong>Jenkins Controller</strong> — pipeline orchestration and job management.',
-              '<strong>Jenkins Build Agents</strong> — isolated execution environments.',
-              '<strong>Docker CLI</strong> — container image management.',
-              '<strong>Docker Buildx</strong> — advanced container builds.',
-              '<strong>BuildKit</strong> — faster and more efficient image building.',
-              '<strong>GitHub</strong> — source-code management and webhook integration.',
-              '<strong>Container Registry</strong> — image storage and versioning.',
-              '<strong>Jenkins Pipeline</strong> — the automated CI/CD workflow itself.'
+              '<strong>Jenkins Controller</strong> pipeline orchestration and job management.',
+              '<strong>Jenkins Build Agents</strong> isolated execution environments.',
+              '<strong>Docker CLI</strong> container image management.',
+              '<strong>Docker Buildx</strong> advanced container builds.',
+              '<strong>BuildKit</strong> faster and more efficient image building.',
+              '<strong>GitHub</strong> source-code management and webhook integration.',
+              '<strong>Container Registry</strong> image storage and versioning.',
+              '<strong>Jenkins Pipeline</strong> the automated CI/CD workflow itself.'
             ]
           },
           {
@@ -2656,7 +2656,7 @@
           { t: 'h', v: 'Jenkins permissions and security' },
           {
             t: 'p',
-            v: 'Resolved the permission problems that sit between Jenkins, Docker, and the underlying host — the class of problem usually worked around rather than fixed.'
+            v: 'Resolved the permission problems that sit between Jenkins, Docker, and the underlying host the class of problem usually worked around rather than fixed.'
           },
           {
             t: 'list',
@@ -2841,12 +2841,12 @@
           {
             t: 'list',
             v: [
-              '<strong>Jenkins</strong> — CI/CD orchestration.',
-              '<strong>GitHub</strong> — source-code repository.',
-              '<strong>Jenkins Pipeline</strong> — the automated workflow.',
-              '<strong>Slack</strong> — team notifications.',
-              '<strong>Docker</strong> — application build environment.',
-              '<strong>AWS / cloud infrastructure</strong> — deployment target.'
+              '<strong>Jenkins</strong> CI/CD orchestration.',
+              '<strong>GitHub</strong> source-code repository.',
+              '<strong>Jenkins Pipeline</strong> the automated workflow.',
+              '<strong>Slack</strong> team notifications.',
+              '<strong>Docker</strong> application build environment.',
+              '<strong>AWS / cloud infrastructure</strong> deployment target.'
             ]
           },
           {
@@ -3017,14 +3017,14 @@
           {
             t: 'list',
             v: [
-              'Build started — <strong>informational</strong>.',
-              'Build successful — <strong>success</strong>.',
-              'Test failed — <strong>warning / failure</strong>.',
-              'Docker build failed — <strong>failure</strong>.',
-              'Security scan failed — <strong>security alert</strong>.',
-              'Deployment started — <strong>informational</strong>.',
-              'Deployment successful — <strong>success</strong>.',
-              'Production deployment failed — <strong>critical alert</strong>.'
+              'Build started <strong>informational</strong>.',
+              'Build successful <strong>success</strong>.',
+              'Test failed <strong>warning / failure</strong>.',
+              'Docker build failed <strong>failure</strong>.',
+              'Security scan failed <strong>security alert</strong>.',
+              'Deployment started <strong>informational</strong>.',
+              'Deployment successful <strong>success</strong>.',
+              'Production deployment failed <strong>critical alert</strong>.'
             ]
           },
           { t: 'h', v: 'Secure Slack integration' },
@@ -3097,7 +3097,7 @@
           },
           {
             t: 'note',
-            v: 'The source document describes this improvement qualitatively — it reports no before-and-after response-time measurement, so none is quoted here.'
+            v: 'The source document describes this improvement qualitatively it reports no before-and-after response-time measurement, so none is quoted here.'
           }
         ]
       }
@@ -3241,17 +3241,17 @@
           {
             t: 'list',
             v: [
-              '<strong>Azure Container Registry (ACR)</strong> — private container image registry.',
-              '<strong>Azure Virtual Network</strong> — network isolation.',
-              '<strong>Azure Subnets</strong> — workload segmentation.',
-              '<strong>Azure NSG</strong> — network access control.',
-              '<strong>Azure Key Vault</strong> — secret and credential management.',
-              '<strong>Azure Monitor</strong> — infrastructure monitoring.',
-              '<strong>Log Analytics</strong> — centralised logs.',
-              '<strong>Azure Storage</strong> — application and infrastructure storage.',
-              '<strong>Azure Database Services</strong> — managed database workloads.',
-              '<strong>Azure Identity / Entra ID</strong> — authentication and authorisation.',
-              '<strong>Azure Compute / Container Services</strong> — application workloads.'
+              '<strong>Azure Container Registry (ACR)</strong> private container image registry.',
+              '<strong>Azure Virtual Network</strong> network isolation.',
+              '<strong>Azure Subnets</strong> workload segmentation.',
+              '<strong>Azure NSG</strong> network access control.',
+              '<strong>Azure Key Vault</strong> secret and credential management.',
+              '<strong>Azure Monitor</strong> infrastructure monitoring.',
+              '<strong>Log Analytics</strong> centralised logs.',
+              '<strong>Azure Storage</strong> application and infrastructure storage.',
+              '<strong>Azure Database Services</strong> managed database workloads.',
+              '<strong>Azure Identity / Entra ID</strong> authentication and authorisation.',
+              '<strong>Azure Compute / Container Services</strong> application workloads.'
             ]
           },
           { t: 'h', v: 'Network segmentation' },
@@ -3466,7 +3466,7 @@
           { t: 'h', v: 'Real-world case study' },
           {
             t: 'p',
-            v: 'A containerised application running in Azure experienced intermittent failures after a deployment. The team needed to determine whether the cause was application code, container startup, network connectivity, database access, resource limits, or identity permissions — six candidates with no signal to separate them.'
+            v: 'A containerised application running in Azure experienced intermittent failures after a deployment. The team needed to determine whether the cause was application code, container startup, network connectivity, database access, resource limits, or identity permissions six candidates with no signal to separate them.'
           },
           {
             t: 'p',
@@ -3532,7 +3532,7 @@
           },
           {
             t: 'p',
-            v: 'For businesses already running workloads on Azure — or migrating from traditional infrastructure — this provides a foundation for <strong>secure, automated, observable, and maintainable cloud operations</strong>.'
+            v: 'For businesses already running workloads on Azure or migrating from traditional infrastructure this provides a foundation for <strong>secure, automated, observable, and maintainable cloud operations</strong>.'
           },
           {
             t: 'note',
@@ -3680,15 +3680,15 @@
           {
             t: 'list',
             v: [
-              '<strong>GitHub</strong> — source code.',
-              '<strong>GitHub Actions</strong> — CI/CD automation.',
-              '<strong>Docker</strong> — application containerisation.',
-              '<strong>Azure Container Registry</strong> — private image registry.',
-              '<strong>Terraform</strong> — infrastructure provisioning.',
-              '<strong>Azure Compute / Container Platform</strong> — application runtime.',
-              '<strong>Microsoft Entra ID / OIDC</strong> — secure authentication.',
-              '<strong>Azure Key Vault</strong> — secrets management.',
-              '<strong>Azure Monitor</strong> — deployment and application monitoring.'
+              '<strong>GitHub</strong> source code.',
+              '<strong>GitHub Actions</strong> CI/CD automation.',
+              '<strong>Docker</strong> application containerisation.',
+              '<strong>Azure Container Registry</strong> private image registry.',
+              '<strong>Terraform</strong> infrastructure provisioning.',
+              '<strong>Azure Compute / Container Platform</strong> application runtime.',
+              '<strong>Microsoft Entra ID / OIDC</strong> secure authentication.',
+              '<strong>Azure Key Vault</strong> secrets management.',
+              '<strong>Azure Monitor</strong> deployment and application monitoring.'
             ]
           }
         ]
@@ -3714,7 +3714,7 @@
           },
           {
             t: 'p',
-            v: 'Each stage provides a clear failure boundary, which is what makes the pipeline troubleshootable — a failed run identifies itself by where it stopped.'
+            v: 'Each stage provides a clear failure boundary, which is what makes the pipeline troubleshootable a failed run identifies itself by where it stopped.'
           },
           { t: 'h', v: 'Automated application build' },
           {
@@ -3752,7 +3752,7 @@
           { t: 'h', v: 'Image versioning' },
           {
             t: 'p',
-            v: 'Immutable image references are used rather than relying exclusively on <code>latest</code> — for example <code>my-app:8f42c1a</code> and <code>my-app:release-2026.08.22</code>. That gives a traceable chain from <strong>Git commit → container image → Azure deployment</strong>, and makes rollback significantly safer.'
+            v: 'Immutable image references are used rather than relying exclusively on <code>latest</code> for example <code>my-app:8f42c1a</code> and <code>my-app:release-2026.08.22</code>. That gives a traceable chain from <strong>Git commit → container image → Azure deployment</strong>, and makes rollback significantly safer.'
           },
           {
             t: 'note',
@@ -3894,7 +3894,7 @@
         blocks: [
           {
             t: 'p',
-            v: 'An application was being deployed manually to Azure. The process required engineers to build the application, build a Docker image, log in to Azure, push the image, update the application, and then check whether the deployment worked — six manual steps, every release, in the right order.'
+            v: 'An application was being deployed manually to Azure. The process required engineers to build the application, build a Docker image, log in to Azure, push the image, update the application, and then check whether the deployment worked six manual steps, every release, in the right order.'
           },
           { t: 'p', v: 'This created inconsistent releases and increased the chance of human error. The delivery process was automated end to end:' },
           {
@@ -3918,7 +3918,7 @@
           { t: 'h', v: 'Production operations' },
           {
             t: 'p',
-            v: 'After deployment, Azure monitoring provides visibility into application health, container status, CPU and memory, application logs, HTTP errors, infrastructure events, and deployment failures — closing the loop into a complete operational lifecycle:'
+            v: 'After deployment, Azure monitoring provides visibility into application health, container status, CPU and memory, application logs, HTTP errors, infrastructure events, and deployment failures closing the loop into a complete operational lifecycle:'
           },
           { t: 'flow', v: ['Build', 'Deploy', 'Monitor', 'Diagnose', 'Improve'] }
         ]
@@ -3964,7 +3964,7 @@
           },
           {
             t: 'note',
-            v: 'The source document reports these outcomes qualitatively — it records no deployment-frequency or lead-time measurements, so none are quoted here.'
+            v: 'The source document reports these outcomes qualitatively it records no deployment-frequency or lead-time measurements, so none are quoted here.'
           }
         ]
       }
@@ -4206,10 +4206,10 @@
   };
 
   var projects = [
-    cloudCostOptimizer, 
-    cloudwatchGitops, 
-    eksPlatform, 
-    gitopsDelivery, 
+    cloudCostOptimizer,
+    cloudwatchGitops,
+    eksPlatform,
+    gitopsDelivery,
     ecsPlatform,
     jenkinsAgentPlatform,
     jenkinsSlackNotifications,
