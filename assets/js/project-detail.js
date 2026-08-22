@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Abir Al Zubayer — Portfolio
+   Abir Al Zubayer Portfolio
    project-detail.js
 
    Renders a single case study into project.html from window.PORTFOLIO_PROJECTS.
@@ -12,8 +12,8 @@
 
    Because the URL points at an actual document rather than a virtual path, a
    direct link, a bookmark, and a hard refresh all resolve identically on plain
-   static hosting — no rewrite rules or history fallback required. A trailing
-   `#slug` is accepted as a secondary form, and older `?project=` / `?slug=`
+   static hosting no rewrite rules or history fallback required. A trailing
+   `#slug` is accepted as a secondary form, and older `?project=` `?slug=`
    parameter names are honoured so existing links keep working.
 
    Behaviour
@@ -111,7 +111,7 @@
   }
 
   function applyHead(project) {
-    var title = plain(project.name) + ' — Case Study | Abir Al Zubayer';
+    var title = plain(project.name) + ' Case Study | Abir Al Zubayer';
     var description = plain(project.tagline);
     var url = SITE + 'project.html?p=' + project.slug;
     var image = SITE + project.hero.base + '.png';
@@ -368,8 +368,8 @@
         'p',
         'case-source',
         'This case study is written from the project’s own architecture documentation in this repository (<code>' +
-          project.source +
-          '</code>). Illustrative figures are labelled where they appear.'
+        project.source +
+        '</code>). Illustrative figures are labelled where they appear.'
       )
     );
 
@@ -418,7 +418,7 @@
   }
 
   /* The browser resolves #fragment while parsing, before this deferred script has
-     built the sections — so a shared link like ?p=…#architecture needs the jump
+     built the sections so a shared link like ?p=…#architecture needs the jump
      repeating once its target exists. */
   function scrollToAnchor() {
     if (window.location.hash.length < 2) return;
@@ -459,13 +459,13 @@
       el(
         'p',
         'case-fallback__text',
-        'Choose a project to read its full case study — architecture, infrastructure, DevOps implementation, key features, and outcomes.'
+        'Choose a project to read its full case study architecture, infrastructure, DevOps implementation, key features, and outcomes.'
       )
     );
     wrap.appendChild(projectListItems());
     root.appendChild(wrap);
 
-    document.title = 'Project Case Studies — Abir Al Zubayer';
+    document.title = 'Project Case Studies Abir Al Zubayer';
   }
 
   function renderNotFound(slug) {
@@ -491,7 +491,7 @@
 
     root.appendChild(wrap);
 
-    document.title = 'Project not found — Abir Al Zubayer';
+    document.title = 'Project not found Abir Al Zubayer';
     markNoindex();
   }
 

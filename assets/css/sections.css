@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Section styles — follows document order
+   Section styles follows document order
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -173,7 +173,7 @@
  *   subtitle ink  x=96   y=337  w=1032 → ~66px, right-aligned to x=1129
  *   body ink      x=192  y=523  w=975  → ~21px, indented 96px, opacity .8
  *   buttons       y=683  h=55, gold tile flush at x=276, ghost btn at x=353.5
- * The hero sits on plain white — no wash.
+ * The hero sits on plain white no wash.
  */
 .hero {
   position: relative;
@@ -246,7 +246,7 @@
   height: 54px;
 }
 
-/* View Projects and the play tile read as one unit — zero gap in the reference */
+/* View Projects and the play tile read as one unit zero gap in the reference */
 .hero__group {
   display: flex;
   gap: 0;
@@ -298,6 +298,7 @@
 }
 
 @media (max-width: 420px) {
+
   /* Let the button pair fill the row instead of overflowing it */
   .hero__actions,
   .hero__group {
@@ -397,15 +398,14 @@
 /*
  * Slate panel holding the giant wordmark + vision/goal cards.
  * Reference: panel x=18 y=940 w=1406 h=626 rx=20; wordmark ink 1246 x 240 at
- * y=1013; cards y=1330 h=174 rx=16 at x=71 (w=630) and x=725 (w=628) — so a
+ * y=1013; cards y=1330 h=174 rx=16 at x=71 (w=630) and x=725 (w=628) so a
  * 53px side inset, a 24px gutter, and 62px below the cards.
  */
 .panel {
   position: relative;
   background: var(--slate);
   border-radius: var(--r-lg);
-  padding: clamp(1.5rem, 0.5rem + 4.6vw, 4.1rem) clamp(1.25rem, 0.5rem + 3.3vw, 3.3rem)
-    clamp(1.5rem, 0.6rem + 4.3vw, 3.9rem);
+  padding: clamp(1.5rem, 0.5rem + 4.6vw, 4.1rem) clamp(1.25rem, 0.5rem + 3.3vw, 3.3rem) clamp(1.5rem, 0.6rem + 4.3vw, 3.9rem);
   overflow: hidden;
   isolation: isolate;
 }
@@ -499,8 +499,13 @@
 }
 
 @keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -576,7 +581,7 @@
   padding-block: 1.5rem 2rem;
 }
 
-/* First card has no gold caption in the reference — it carries an arrow tile */
+/* First card has no gold caption in the reference it carries an arrow tile */
 .process-card__arrow {
   position: absolute;
   right: 1rem;
@@ -672,9 +677,9 @@
   border-right: 1.5px solid var(--ink);
 }
 
-/* Reference circles are 421px wide on a 422px pitch — they almost touch,
+/* Reference circles are 421px wide on a 422px pitch they almost touch,
    spanning x=84..1349 (1265px), a little wider than the default shell. */
-.certs > .shell {
+.certs>.shell {
   --shell-max: 1272px;
 }
 
@@ -729,6 +734,7 @@
 }
 
 @media (max-width: 1120px) {
+
   /* The section loses its negative-margin overlap here, so it needs its own
      vertical rhythm back. */
   .certs {
@@ -953,7 +959,7 @@
   margin-bottom: clamp(1.75rem, 1rem + 3vw, 3.45rem);
 }
 
-/* Two 590x332 cards at x=120 and x=734 — a 24px gutter inside a 1204px band. */
+/* Two 590x332 cards at x=120 and x=734 a 24px gutter inside a 1204px band. */
 .featured__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -985,7 +991,7 @@
 
 /*
  * Ink positions inside a card whose top is y=3873: kicker 3908.8, title 3951.2,
- * date 4046.6, excerpt 4100.6 (one line), pill 4143.5 — so ~36px of top padding
+ * date 4046.6, excerpt 4100.6 (one line), pill 4143.5 so ~36px of top padding
  * and roughly 15px between rows.
  */
 .article-card__body {
@@ -993,8 +999,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: clamp(0.5rem, 0.25rem + 0.7vw, 0.95rem);
-  padding: clamp(1.1rem, 0.7rem + 1.5vw, 2.2rem) clamp(1rem, 0.8rem + 0.8vw, 1.55rem)
-    clamp(1rem, 0.8rem + 0.7vw, 1.5rem);
+  padding: clamp(1.1rem, 0.7rem + 1.5vw, 2.2rem) clamp(1rem, 0.8rem + 0.8vw, 1.55rem) clamp(1rem, 0.8rem + 0.7vw, 1.5rem);
 }
 
 .article-card__kicker {
@@ -1069,7 +1074,7 @@
 /* --------------------------------------------------------------------------
    Recent work
    -------------------------------------------------------------------------- */
-/* Three 384px columns at x=105/531/957 — a 42px gutter, images 384x184. */
+/* Three 384px columns at x=105/531/957 a 42px gutter, images 384x184. */
 .work__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1171,8 +1176,7 @@
     radial-gradient(60% 80% at 0% 100%, rgb(129 236 255 / 10%) 0%, transparent 62%),
     var(--ink);
   border-radius: var(--r-lg);
-  padding: clamp(2rem, 1.2rem + 3.4vw, 4rem) clamp(1.1rem, 0.4rem + 2.8vw, 3.25rem)
-    clamp(2.25rem, 1.4rem + 3.6vw, 4rem);
+  padding: clamp(2rem, 1.2rem + 3.4vw, 4rem) clamp(1.1rem, 0.4rem + 2.8vw, 3.25rem) clamp(2.25rem, 1.4rem + 3.6vw, 4rem);
   overflow: hidden;
 }
 
@@ -1501,7 +1505,7 @@
 
 /* Reference gives About a slightly wider column than the default shell:
    the outlined box sits at x=82 w=1278, and the gallery at x=62..1344. */
-.about > .shell {
+.about>.shell {
   --shell-max: 1282px;
 }
 
@@ -1544,7 +1548,7 @@
 
 /*
  * Alternating circle / rounded-square rhythm from the reference. Each image is
- * wrapped in its own <picture>, so the rhythm has to key off the wrappers —
+ * wrapped in its own <picture>, so the rhythm has to key off the wrappers
  * nth-child on the img itself always matches the first (and only) child.
  */
 .about__gallery picture:nth-child(odd) img {
@@ -1583,7 +1587,7 @@
   height: 28px;
 }
 
-.about__box p + p {
+.about__box p+p {
   margin-top: 1rem;
 }
 
@@ -1621,20 +1625,19 @@
   color: #fff;
 }
 
-/* Reference: card x=79 w=1281 — a touch wider than the default shell. */
-.footer > .shell {
+/* Reference: card x=79 w=1281 a touch wider than the default shell. */
+.footer>.shell {
   --shell-max: 1282px;
 }
 
 /*
  * Card x=79 y=7417 w=1281 h=444.9 rx=20; the slate panel inside sits at
- * x=142 y=7466 — a 63px inset on both sides and 49px from the top.
+ * x=142 y=7466 a 63px inset on both sides and 49px from the top.
  */
 .footer__card {
   background: var(--ink);
   border-radius: 20px;
-  padding: clamp(1.5rem, 1rem + 2.2vw, 3.06rem) clamp(1.25rem, 0.4rem + 4.4vw, 3.94rem)
-    clamp(1.25rem, 1rem + 1vw, 2rem);
+  padding: clamp(1.5rem, 1rem + 2.2vw, 3.06rem) clamp(1.25rem, 0.4rem + 4.4vw, 3.94rem) clamp(1.25rem, 1rem + 1vw, 2rem);
 }
 
 /* Inner slate card: 1155 x 195.9, rx=20, 20px inline padding. */
@@ -1645,12 +1648,11 @@
   align-items: start;
   background: var(--slate);
   border-radius: 20px;
-  padding: clamp(1.5rem, 1.2rem + 1.5vw, 2.15rem) clamp(1rem, 0.85rem + 0.5vw, 1.25rem)
-    clamp(1.25rem, 1rem + 1vw, 1.75rem);
+  padding: clamp(1.5rem, 1.2rem + 1.5vw, 2.15rem) clamp(1rem, 0.85rem + 0.5vw, 1.25rem) clamp(1.25rem, 1rem + 1vw, 1.75rem);
   margin-bottom: clamp(1.5rem, 0.9rem + 2vw, 1.55rem);
 }
 
-/* Heading ink x=161.9 y=7500.4 w=547.8 h=87.1 — two lines at ~44px. */
+/* Heading ink x=161.9 y=7500.4 w=547.8 h=87.1 two lines at ~44px. */
 .contact h2 {
   font-size: clamp(1.5rem, 0.95rem + 2.1vw, 2.75rem);
   font-weight: 700;
@@ -1683,7 +1685,7 @@
   color: var(--gold);
 }
 
-/* Right column ink x=771.3 y=7496.1 w=482.3 h=56.6 — three lines at ~15px. */
+/* Right column ink x=771.3 y=7496.1 w=482.3 h=56.6 three lines at ~15px. */
 .contact__aside p {
   color: rgb(255 255 255 / 88%);
   font-size: clamp(0.8125rem, 0.76rem + 0.2vw, 0.9375rem);

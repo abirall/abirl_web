@@ -1,4 +1,4 @@
-# Abir Al Zubayer — Portfolio Website
+# Abir Al Zubayer Portfolio Website
 
 [![Live](https://img.shields.io/badge/live-alzubayer.com-f4a300?style=flat-square)](https://alzubayer.com/)
 [![HTML5](https://img.shields.io/badge/HTML-5-e34f26?style=flat-square&logo=html5&logoColor=white)](#)
@@ -6,7 +6,7 @@
 [![Vanilla JS](https://img.shields.io/badge/JavaScript-ES6-f7df1e?style=flat-square&logo=javascript&logoColor=black)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](#license)
 
-> Production portfolio of **Abir Al Zubayer** (Abir DevOps) — a DevOps & Cloud Engineer based in Dhaka, Bangladesh. The site showcases cloud infrastructure expertise, Kubernetes mastery, CI/CD automation, and real-world project case studies.
+> Production portfolio of **Abir Al Zubayer** (Abir DevOps) a DevOps & Cloud Engineer based in Dhaka, Bangladesh. The site showcases cloud infrastructure expertise, Kubernetes mastery, CI/CD automation, and real-world project case studies.
 
 ---
 
@@ -46,9 +46,9 @@
 | **Social Row + Vision/Goal** | GitHub, LinkedIn, YouTube links; slate-panel vision & goal cards |
 | **Architecture Ticker** | Seamless CSS-marquee listing 28+ technologies (Microservice, K8s, Docker, ArgoCD, Terraform, Prometheus, etc.) |
 | **Work Process** | Three-image case-study grid: reduced deployment time, automated CI/CD, 99.9% uptime |
-| **Certifications** | AWS Solutions Architect, Microsoft Azure, Red Hat RHCSA — each with a descriptive paragraph |
+| **Certifications** | AWS Solutions Architect, Microsoft Azure, Red Hat RHCSA each with a descriptive paragraph |
 | **Core Mastery** | Kubernetes & Docker deep-dive: zero-trust networking (Istio + Calico), GitOps delivery (ArgoCD + Helm), with progress meters |
-| **Featured Projects** | Cloud Cost Optimizer and Developer Platform — Medium-linked article cards |
+| **Featured Projects** | Cloud Cost Optimizer and Developer Platform Medium-linked article cards |
 | **Recent Work** | Three LinkedIn-linked portfolio cards: K8s Monitoring, GitOps Delivery, AWS EKS Platform |
 | **Testimonials** | Five client reviews, 5.0 average rating, star ratings, delivery timeframes |
 | **Deep Knowledge** | Three Medium article cards ("Learn with Abir") |
@@ -61,9 +61,9 @@
 - **Sticky header** with scroll-spy active-state tracking
 - **Mobile-responsive** hamburger menu with escape-key and outside-click dismissal
 - **Scroll-triggered reveal** animations (CSS + Intersection Observer)
-- **`prefers-reduced-motion`** support — reveals appear instantly, ticker pauses
-- **Progressive image loading**: WebP with PNG fallback via `<picture>`, all images `loading="lazy"` + `decoding="async"`
-- **Fluid typography** via `clamp()` — scales from mobile through 4K
+- **`prefers-reduced-motion`** support reveals appear instantly, ticker pauses
+- **Progressive image loading** WebP with PNG fallback via `<picture>`, all images `loading="lazy"` + `decoding="async"`
+- **Fluid typography** via `clamp()` scales from mobile through 4K
 - **`--header-h` CSS custom property** synced live via `ResizeObserver` for accurate anchor scroll-padding
 
 ---
@@ -73,8 +73,8 @@
 | Layer | Technology |
 |---|---|
 | **Markup** | HTML5 (semantic, accessible, WAI-ARIA landmarks) |
-| **Styling** | CSS3 — custom properties, fluid type scale, CSS-only marquee |
-| **Scripting** | Vanilla JS (ES6 module IIFE) — no frameworks, no dependencies |
+| **Styling** | CSS3 custom properties, fluid type scale, CSS-only marquee |
+| **Scripting** | Vanilla JS (ES6 module IIFE) no frameworks, no dependencies |
 | **Fonts** | [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts, asynchronously loaded) |
 | **Images** | WebP + PNG fallback, SVGs for icons |
 | **Icons** | Inline SVGs + external SVG sprites |
@@ -139,7 +139,7 @@ abir_al_zubayer/
 
 ### On-Page SEO
 
-- **Title tag**: "Abir Al Zubayer — DevOps Engineer in Bangladesh | Kubernetes, Docker & AWS"
+- **Title tag**: "Abir Al Zubayer DevOps Engineer in Bangladesh Kubernetes Docker & AWS"
 - **Meta description**: 160-character optimized description with primary keywords
 - **Meta keywords**: DevOps Engineer Bangladesh, Kubernetes, Docker, AWS, Azure, Terraform, CI/CD
 - **Canonical URL**: `https://alzubayer.com/`
@@ -200,7 +200,7 @@ python -m http.server # Python 3
 # Or open index.html directly in your browser
 ```
 
-Edit `index.html`, `assets/css/base.css`, `assets/css/sections.css`, or `assets/js/main.js` — no build step required.
+Edit `index.html`, `assets/css/base.css`, `assets/css/sections.css`, or `assets/js/main.js` no build step required.
 
 ### Image Pipeline (Optional)
 
@@ -252,7 +252,7 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ## Contact
 
-**Abir Al Zubayer** — DevOps Engineer, Dhaka, Bangladesh
+**Abir Al Zubayer** DevOps Engineer, Dhaka, Bangladesh
 
 | Channel | Link |
 |---|---|
@@ -267,5 +267,5 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 ---
 
 <p align="center">
-  <sub>Built with vanilla HTML, CSS & JS — no frameworks, no build tools, no compromises.</sub>
+  <sub>Built with vanilla HTML, CSS & JS no frameworks, no build tools, no compromises.</sub>
 </p>
