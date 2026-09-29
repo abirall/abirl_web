@@ -6,10 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Page not found Abir Al Zubayer</title>
   <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#07080b" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var t;
+      // Device theme is the default; a manual toggle lasts for this session only.
+      try { localStorage.removeItem('theme'); t = sessionStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', t === 'light' ? '#f6f6f3' : '#07080b');
+    })();
+  </script>
   <link rel="icon" href="assets/logo/mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <style>
     .oops {
@@ -26,13 +43,14 @@
     .oops::before {
       content: "";
       position: absolute;
-      inset: -20%;
+      inset: 0;
       z-index: -1;
-      background:
-        radial-gradient(38% 45% at 12% 24%, rgb(186 214 255 / 45%) 0%, transparent 70%),
-        radial-gradient(36% 42% at 32% 78%, rgb(255 226 178 / 50%) 0%, transparent 72%),
-        radial-gradient(42% 48% at 74% 30%, rgb(226 214 255 / 45%) 0%, transparent 70%);
-      filter: blur(10px);
+      background-image:
+        linear-gradient(rgb(var(--fg-rgb) / 5%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--fg-rgb) / 5%) 1px, transparent 1px);
+      background-size: 56px 56px;
+      -webkit-mask-image: radial-gradient(ellipse at center, #000 10%, transparent 65%);
+      mask-image: radial-gradient(ellipse at center, #000 10%, transparent 65%);
     }
 
     .oops img {
@@ -43,21 +61,39 @@
     }
 
     .oops__code {
-      font-size: clamp(4.5rem, 2rem + 14vw, 9rem);
+      font-size: clamp(5rem, 2rem + 16vw, 11rem);
       font-weight: 800;
       line-height: 0.9;
-      letter-spacing: -0.05em;
-      color: var(--slate-panel);
+      letter-spacing: -0.06em;
+      background: linear-gradient(180deg, var(--title-start) 20%, rgb(var(--fg-rgb) / 15%));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .oops__log {
+      display: inline-block;
+      margin-top: var(--sp-5);
+      padding: 0.45rem 0.9rem;
+      border: 1px solid var(--line-2);
+      border-radius: var(--r-pill);
+      font-family: var(--font-mono);
+      font-size: var(--fs-2xs);
+      color: var(--text-3);
+    }
+
+    .oops__log b {
+      color: var(--red);
+      font-weight: 500;
     }
 
     .oops h1 {
       font-size: var(--fs-h3);
-      margin-block: var(--sp-4) var(--sp-3);
-      color: var(--ink);
+      margin-block: var(--sp-5) var(--sp-3);
     }
 
     .oops p {
-      color: var(--slate);
+      color: var(--text-2);
       max-width: 46ch;
       margin-inline: auto;
       margin-bottom: var(--sp-6);
@@ -70,6 +106,7 @@
     <div>
       <img src="assets/logo/mark.svg" alt="Abir Al Zubayer" />
       <p class="oops__code">404</p>
+      <span class="oops__log" aria-hidden="true">GET <b>404</b> &middot; route not found in any cluster</span>
       <h1>This page took a wrong turn</h1>
       <p>
         The page you're looking for doesn't exist or has moved. Let's get you back to

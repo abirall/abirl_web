@@ -12,7 +12,22 @@
     content="DevOps case study, AWS architecture, Kubernetes platform, Terraform, GitOps, Argo CD, Amazon EKS, Amazon ECS, CloudWatch, Prometheus, Grafana" />
   <meta name="author" content="Abir Al Zubayer" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#1a1a1a" />
+  <meta name="theme-color" content="#07080b" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var t;
+      // Device theme is the default; a manual toggle lasts for this session only.
+      try { localStorage.removeItem('theme'); t = sessionStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', t === 'light' ? '#f6f6f3' : '#07080b');
+    })();
+  </script>
   <meta name="geo.region" content="BD" />
   <link rel="canonical" href="https://alzubayer.com/project.html" />
 
@@ -35,12 +50,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
     media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
   </noscript>
 
   <link rel="stylesheet" href="assets/css/base.css" />
@@ -50,6 +65,7 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <div class="shell">
@@ -59,11 +75,22 @@
           <span>Abir Al Zubayer</span>
         </a>
 
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+          <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+
         <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
           <span></span><span></span><span></span>
         </button>
 
         <div class="nav__links" id="nav-menu">
+          <span class="nav__indicator" aria-hidden="true"></span>
           <a href="index.html#home">Home</a>
           <a href="index.html#projects" class="is-active">Projects</a>
           <a href="index.html#experience">Experience</a>
@@ -168,7 +195,7 @@
       <div class="footer__card">
         <section class="contact reveal" aria-labelledby="contact-title">
           <div>
-            <h2 id="contact-title">Ready to Elevate Your Skills ,<br />Lets solve Together</h2>
+            <h2 id="contact-title">Ready to Elevate Your Skills,<br /><span class="text-gradient">Let’s Solve Together</span></h2>
             <ul class="contact__list">
               <li>
                 <img src="assets/icons/call.svg" width="22" height="22" alt="" loading="lazy" />
@@ -187,7 +214,7 @@
               workflows to eliminate manual bottlenecks and speed up releases.
             </p>
             <div class="contact__cta">
-              <a class="btn btn--outline-gold" href="mailto:abiralzubayer0@gmail.com">Contact&nbsp; Abir</a>
+              <a class="btn btn--outline-gold" href="mailto:abiralzubayer0@gmail.com">Contact Abir</a>
               <a class="btn-tile" href="mailto:abiralzubayer0@gmail.com" aria-label="Email Abir Al Zubayer">
                 <svg aria-hidden="true" viewBox="0 0 24 24">
                   <path d="M7 17 17 7m0 0H9m8 0v8" />
@@ -212,13 +239,13 @@
 
           <div class="footer__socials">
             <a href="https://github.com/abirall" target="_blank" rel="noopener" aria-label="GitHub">
-              <img src="assets/icons/github.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
             </a>
             <a href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <img src="assets/icons/linkedin.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
             <a href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener" aria-label="YouTube">
-              <img src="assets/icons/youtube.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z" /></svg>
             </a>
           </div>
         </div>

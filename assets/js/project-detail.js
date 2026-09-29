@@ -268,7 +268,7 @@
   }
 
   function renderHero(project) {
-    var hero = el('section', 'case-hero');
+    var hero = el('section', 'case-hero reveal');
     hero.setAttribute('aria-labelledby', 'case-title');
 
     var grid = el('div', 'case-hero__grid');
@@ -334,7 +334,7 @@
   function renderArticle(project) {
     var article = el('article', 'case-article');
 
-    var goal = el('div', 'case-goal');
+    var goal = el('div', 'case-goal reveal');
     goal.appendChild(svg('case-goal__icon', ICON_GOAL));
     var goalCopy = el('div');
     goalCopy.appendChild(text('p', 'case-goal__label', 'Core goal'));
@@ -343,7 +343,7 @@
     article.appendChild(goal);
 
     project.sections.forEach(function (section, index) {
-      var node = el('section', 'case-section');
+      var node = el('section', 'case-section reveal');
       node.id = section.id;
       node.setAttribute('aria-labelledby', section.id + '-title');
 
@@ -378,7 +378,7 @@
 
   function renderPager(project) {
     var index = projects.indexOf(project);
-    var pager = el('nav', 'case-pager');
+    var pager = el('nav', 'case-pager reveal');
     pager.setAttribute('aria-label', 'More case studies');
 
     function link(target, direction, modifier) {

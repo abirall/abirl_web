@@ -12,7 +12,22 @@
     content="Abir DevOps, Abir Al Zubayer, DevOps Engineer Bangladesh, DevOps Bangladesh, Cloud Engineer Bangladesh, Kubernetes, Docker, AWS, Azure, Terraform, Jenkins, GitHub Actions, Linux, DevSecOps, MLOps, Cloud Native, CI/CD" />
   <meta name="author" content="Abir Al Zubayer" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="theme-color" content="#1a1a1a" />
+  <meta name="theme-color" content="#07080b" />
+  <meta name="color-scheme" content="dark light" />
+  <!-- Apply the saved (or system) theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var t;
+      // Device theme is the default; a manual toggle lasts for this session only.
+      try { localStorage.removeItem('theme'); t = sessionStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', t === 'light' ? '#f6f6f3' : '#07080b');
+    })();
+  </script>
   <meta name="geo.region" content="BD" />
   <meta name="geo.placename" content="Dhaka, Bangladesh" />
   <link rel="canonical" href="https://alzubayer.com/" />
@@ -51,12 +66,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
     media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
   </noscript>
 
   <link rel="preload" as="image" href="assets/img/hero/abir-profile.webp" type="image/webp" />
@@ -236,6 +251,7 @@
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <div class="shell">
@@ -245,11 +261,22 @@
           <span>Abir Al Zubayer</span>
         </a>
 
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+          <svg class="theme-toggle__sun" aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="theme-toggle__moon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+
         <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
           <span></span><span></span><span></span>
         </button>
 
         <div class="nav__links" id="nav-menu">
+          <span class="nav__indicator" aria-hidden="true"></span>
           <a href="#home" class="is-active">Home</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
@@ -272,39 +299,130 @@
   <main id="main">
     <!-- ================= Hero ================= -->
     <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="shell">
-        <h1 class="hero__title reveal" id="hero-title">
-          <span>Abir Al Zubayer</span>
-          <picture>
-            <source srcset="assets/img/hero/abir-profile.webp" type="image/webp" />
-            <img class="hero__avatar" src="assets/img/hero/abir-profile.png" width="176" height="176"
-              alt="Abir Al Zubayer, DevOps Engineer in Bangladesh" fetchpriority="high" />
-          </picture>
-        </h1>
+      <!-- Decorative backdrop: blueprint grid, drifting glows, a scanning beam -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--gold"></div>
+        <div class="hero__orb hero__orb--cyan"></div>
+        <div class="hero__beam"></div>
+      </div>
 
-        <h2 class="hero__subtitle reveal reveal-delay-1">
-          DevOps Engineer Specializing in
-          <span>Scalable Cloud Infrastructure</span>
-        </h2>
+      <div class="shell hero__layout">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            DevOps &amp; Cloud Engineer <span class="hero__eyebrow-sep" aria-hidden="true">/</span> Dhaka, Bangladesh
+          </p>
 
-        <p class="hero__text reveal reveal-delay-2">
-          Design and deploy secure, automated CI/CD pipelines and
-          production-ready systems using Docker, Kubernetes, and modern DevOps practices.
-        </p>
+          <h1 class="hero__title reveal reveal-delay-1" id="hero-title">
+            <span>Abir Al Zubayer</span>
+            <picture>
+              <source srcset="assets/img/hero/abir-profile.webp" type="image/webp" />
+              <img class="hero__avatar" src="assets/img/hero/abir-profile.png" width="176" height="176"
+                alt="Abir Al Zubayer, DevOps Engineer in Bangladesh" fetchpriority="high" />
+            </picture>
+          </h1>
 
-        <div class="hero__actions reveal reveal-delay-3">
-          <div class="hero__group">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="hero__play" href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener"
-              aria-label="Watch DevOps walkthroughs on YouTube">
-              <svg aria-hidden="true" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </a>
+          <h2 class="hero__subtitle reveal reveal-delay-2">
+            DevOps Engineer Specializing in
+            <span class="text-gradient">Scalable Cloud Infrastructure</span>
+          </h2>
+
+          <p class="hero__text reveal reveal-delay-3">
+            Design and deploy secure, automated CI/CD pipelines and
+            production-ready systems using Docker, Kubernetes, and modern DevOps practices.
+          </p>
+
+          <div class="hero__actions reveal reveal-delay-4">
+            <div class="hero__group">
+              <a class="btn btn--gold" href="#projects">
+                View Projects
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M5 12h14m0 0-6-6m6 6-6 6" />
+                </svg>
+              </a>
+              <a class="hero__play" href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener"
+                aria-label="Watch DevOps walkthroughs on YouTube">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </a>
+            </div>
+            <a class="btn btn--ghost" href="#contact">Let's Connect</a>
           </div>
-          <a class="btn btn--ghost" href="#contact">Let's Connect</a>
+
+          <dl class="hero__stats reveal reveal-delay-4">
+            <div class="hero__stat">
+              <dt>Years in tech</dt>
+              <dd><span data-count="7">7</span>+</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Faster deployments</dt>
+              <dd><span data-count="60">60</span>%</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Uptime delivered</dt>
+              <dd><span data-count="99.9" data-decimals="1">99.9</span>%</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Certifications</dt>
+              <dd><span data-count="3">3</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Live-console illustration. Purely decorative, so hidden from
+             assistive tech; the same skills are described in the copy. -->
+        <div class="hero__visual reveal reveal-delay-2" aria-hidden="true">
+          <div class="console" data-tilt>
+            <div class="console__bar">
+              <span class="console__dots"><i></i><i></i><i></i></span>
+              <span class="console__title">abir@platform: ~/infra</span>
+              <span class="console__badge">prod</span>
+            </div>
+            <div class="console__body">
+              <p class="c-line"><span class="c-prompt">$</span> terraform apply -auto-approve</p>
+              <p class="c-line c-dim">module.vpc <span class="c-ok">&#10003;</span> module.eks <span class="c-ok">&#10003;</span> module.iam <span class="c-ok">&#10003;</span></p>
+              <p class="c-line"><span class="c-ok">Apply complete!</span> <span class="c-dim">Resources: 42 added.</span></p>
+              <p class="c-line"><span class="c-prompt">$</span> kubectl get pods -n production</p>
+              <p class="c-line c-head">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY&nbsp;&nbsp;STATUS</p>
+              <p class="c-line">api-7d9f6c8b4-x2k&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-ok">Running</span></p>
+              <p class="c-line">web-5c8b7d9f2-q7m&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-ok">Running</span></p>
+              <p class="c-line">worker-6b4f9-lp3z&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-ok">Running</span></p>
+              <p class="c-line"><span class="c-prompt">$</span> argocd app sync platform</p>
+              <p class="c-line"><span class="c-cyan">&#9679; Synced</span> <span class="c-ok">&#9679; Healthy</span><span class="c-caret"></span></p>
+            </div>
+          </div>
+
+          <div class="pipeline">
+            <div class="pipeline__head">
+              <span>CI/CD pipeline</span>
+              <span class="pipeline__run">main &middot; #1284</span>
+            </div>
+            <ol class="pipeline__stages">
+              <li style="--i: 0">Commit</li>
+              <li style="--i: 1">Build</li>
+              <li style="--i: 2">Test</li>
+              <li style="--i: 3">Scan</li>
+              <li style="--i: 4">Deploy</li>
+            </ol>
+            <div class="pipeline__track"><span></span></div>
+          </div>
+
+          <div class="float-chip float-chip--k8s">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" /></svg>
+            3 nodes &middot; healthy
+          </div>
+          <div class="float-chip float-chip--up">
+            <span class="status-dot"></span>
+            SLO 99.9%
+          </div>
         </div>
       </div>
+
+      <a class="hero__scroll" href="#vision-heading" aria-label="Scroll to the next section">
+        <span></span>
+      </a>
     </section>
 
     <!-- ================= Social row + Vision / Goal ================= -->
@@ -441,7 +559,7 @@
             <article class="mastery-card">
               <div class="mastery-card__head">
                 <h3>Zero-Trust K8s Networking</h3>
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                   stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="14" width="20" height="7" rx="2" />
                   <path d="M6 17.5h.01M10 17.5h.01M12 10a4 4 0 0 1 4-4M12 6a8 8 0 0 1 8-8" />
@@ -452,7 +570,7 @@
                 security and mutual TLS across all microservices.
               </p>
               <div class="meter" role="img" aria-label="Zero-trust networking maturity: 94 percent">
-                <span class="meter__fill" style="--meter-value: 95%; --meter-color: #fdf3dc"></span>
+                <span class="meter__fill" style="--meter-value: 95%; --meter-color: var(--meter-a)"></span>
               </div>
             </article>
 
@@ -472,7 +590,7 @@
                 environment parity and rapid disaster recovery.
               </p>
               <div class="meter" role="img" aria-label="GitOps delivery maturity: 88 percent">
-                <span class="meter__fill" style="--meter-value: 92%; --meter-color: #f4a300"></span>
+                <span class="meter__fill" style="--meter-value: 92%; --meter-color: var(--meter-b)"></span>
               </div>
             </article>
           </div>
@@ -492,7 +610,7 @@
           </p>
 
           <div class="featured__grid">
-            <article class="article-card reveal" style="--card-tint: var(--tint-cream); --card-accent: #d98f00">
+            <article class="article-card reveal" style="--card-tint: var(--tint-cream); --card-accent: var(--gold-text)">
               <picture>
                 <source srcset="assets/img/projects/featured-1.webp" type="image/webp" />
                 <img src="assets/img/projects/featured-1.png" width="1400" height="933"
@@ -518,7 +636,7 @@
             </article>
 
             <article class="article-card reveal reveal-delay-1"
-              style="--card-tint: var(--tint-lilac); --card-accent: #7c3aed">
+              style="--card-tint: var(--tint-lilac); --card-accent: var(--violet-text)">
               <picture>
                 <source srcset="assets/img/work/work-1.webp" type="image/webp" />
                 <img src="assets/img/work/work-1.png" width="1000" height="667"
@@ -861,7 +979,7 @@
       <div class="shell">
         <div class="certs__head">
           <div class="reveal">
-            <p class="eyebrow">Assicivement</p>
+            <p class="eyebrow">Achievements</p>
             <h2 class="section-title" id="certs-title">Certification &amp;<br />Awards</h2>
           </div>
           <div class="certs__rule" aria-hidden="true"></div>
@@ -873,8 +991,7 @@
               <img src="assets/icons/aws.svg" width="48" height="48" alt="Amazon Web Services" loading="lazy" />
             </div>
             <h3>AWS</h3>
-            <!-- CHANGED: Added inline style to center-align details text -->
-            <p style="text-align: center;">
+            <p>
               Earned this validation by passing the AWS exam focused on designing resilient, multi-tier cloud
               architectures. Through this, I mastered deploying highly available systems using EC2, S3, and VPC, while
               gaining deep expertise in secure access controls and cost-optimization strategies.
@@ -886,8 +1003,7 @@
               <img src="assets/icons/azure.svg" width="48" height="48" alt="Microsoft Azure" loading="lazy" />
             </div>
             <h3>Azure</h3>
-            <!-- CHANGED: Added inline style to center-align details text -->
-            <p style="text-align: center;">
+            <p>
               Secured this credential by demonstrating proficiency in cloud governance, virtual networking, and
               automated resource management. This equipped me with the practical skills to manage Azure Active
               Directory, configure secure networks, and streamline software delivery using Azure DevOps pipelines.
@@ -899,8 +1015,7 @@
               <img src="assets/icons/redhat.svg" width="48" height="48" alt="Red Hat" loading="lazy" />
             </div>
             <h3>Red Hat</h3>
-            <!-- CHANGED: Added inline style to center-align details text -->
-            <p style="text-align: center;">
+            <p>
               Achieved this certification by passing a demanding, performance-based live laboratory exam on Red Hat
               Enterprise Linux. This hands-on validation sharpened my skills in advanced system administration, shell
               scripting, automated storage provisioning, and infrastructure security hardening.
@@ -920,7 +1035,7 @@
           </div>
 
           <div class="testimonials__score">
-            <p class="testimonials__score-value">5.0</p>
+            <p class="testimonials__score-value"><span data-count="5" data-decimals="1">5.0</span></p>
             <div>
               <span class="stars stars--lg" role="img" aria-label="Average rating: 5 out of 5"></span>
               <p class="testimonials__score-note">Based on 5 client reviews</p>
@@ -1153,7 +1268,7 @@
         <article class="about__box reveal">
           <div class="about__box-head">
             <h2 id="about-title">About Me</h2>
-            <img src="assets/icons/eye.svg" width="28" height="28" alt="" loading="lazy" />
+            <svg class="about__eye" aria-hidden="true" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></svg>
           </div>
           <p>
             I'm a DevOps Engineer with a strong foundation in Computer Science and product
@@ -1179,7 +1294,7 @@
       <div class="footer__card">
         <section class="contact reveal" aria-labelledby="contact-title">
           <div>
-            <h2 id="contact-title">Ready to Elevate Your Skills ,<br />Lets solve Together</h2>
+            <h2 id="contact-title">Ready to Elevate Your Skills,<br /><span class="text-gradient">Let’s Solve Together</span></h2>
             <ul class="contact__list">
               <li>
                 <img src="assets/icons/call.svg" width="22" height="22" alt="" loading="lazy" />
@@ -1198,7 +1313,7 @@
               workflows to eliminate manual bottlenecks and speed up releases.
             </p>
             <div class="contact__cta">
-              <a class="btn btn--outline-gold" href="mailto:abiralzubayer0@gmail.com">Contact&nbsp; Abir</a>
+              <a class="btn btn--outline-gold" href="mailto:abiralzubayer0@gmail.com">Contact Abir</a>
               <a class="btn-tile" href="mailto:abiralzubayer0@gmail.com" aria-label="Email Abir Al Zubayer">
                 <svg aria-hidden="true" viewBox="0 0 24 24">
                   <path d="M7 17 17 7m0 0H9m8 0v8" />
@@ -1223,13 +1338,13 @@
 
           <div class="footer__socials">
             <a href="https://github.com/abirall" target="_blank" rel="noopener" aria-label="GitHub">
-              <img src="assets/icons/github.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
             </a>
             <a href="https://www.linkedin.com/in/abir-al-zubayer/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <img src="assets/icons/linkedin.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
             </a>
             <a href="https://www.youtube.com/@AbirDevOps" target="_blank" rel="noopener" aria-label="YouTube">
-              <img src="assets/icons/youtube.svg" width="40" height="40" alt="" loading="lazy" />
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z" /></svg>
             </a>
           </div>
         </div>
