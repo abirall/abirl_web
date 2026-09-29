@@ -2148,19 +2148,39 @@ html.theme-vt::view-transition-new(root) {
   transform: scaleX(1);
 }
 
+/* Brand logos sit on a white app-icon tile in both themes, so each mark
+   keeps its official colours. --brand drives the hover glow. */
+.cert-card:nth-child(1) {
+  --brand: 255 153 0;
+}
+
+.cert-card:nth-child(2) {
+  --brand: 0 137 214;
+}
+
+.cert-card:nth-child(3) {
+  --brand: 238 0 0;
+}
+
 .cert-card__logo {
   position: relative;
   z-index: 2;
   display: grid;
   place-items: center;
-  width: 68px;
-  height: 68px;
+  width: 76px;
+  height: 76px;
+  padding: 14px;
   margin-bottom: 1.5rem;
-  transition: transform 0.5s var(--ease);
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid rgb(var(--brand, 244 163 0) / 22%);
+  box-shadow: 0 10px 24px -12px rgb(var(--brand, 244 163 0) / 45%), 0 1px 2px rgb(0 0 0 / 8%);
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
 }
 
 .cert-card:hover .cert-card__logo {
   transform: translateY(-3px) rotate(-4deg);
+  box-shadow: 0 16px 36px -10px rgb(var(--brand, 244 163 0) / 60%), 0 1px 2px rgb(0 0 0 / 8%);
 }
 
 .cert-card__logo img {
